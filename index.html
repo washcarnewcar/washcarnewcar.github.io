@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <title>세차세차</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <script src="js/roading.js" defer></script> -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,36 +24,222 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="img/logo5.png" alt="세차새차"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <!-- navbar -->
+    <header>
+      <div class="header">
+        <h1>
+          <a href="" class="banlife">
+            <img class="header-img" src="img/logo5.png" alt="세차새차" />
+          </a>
+        </h1>
+        <!-- <div class="link" id="gnb">
+          <a href="">예약하기/다운로드</a>
+        </div> -->
+      </div>
+    </header>
+
+    <div id="content">
+      <!-- 첫페이지 -->
+      <section class="main_visual">
+        <div class="cont_wrap">
+          <div class="txt_wrap">
+            <h1 class="big_comment">
+              세차장 예약 <br />세차새차에서 쉽고 간편하게
+            </h1>
+            <div class="btn_group">
+              <div class="appstore_btn">
+                <a href="https://www.ban-life.com/">
+                  <img src="img/logo5.png" class="appstore_ic" />
+                </a>
+              </div>
+              <div class="googkeplay_btn">
+                <a href="https://www.ban-life.com/content/list?t=01">
+                  <img src="img/logo5.png" class="googkeplay_ic" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 중간설명 -->
+      <section class="comment">
+        <h4>
+          가까운 세차장 조회하고 예약하고 가보세요. <br />
+          더운 날, 추운 날 기다리지 않고 <br />
+          바로 세차를 할 수 있는 서비스, <br />
+          세차새차와 함께라면 당신의 일상이 새로워질 거예요
+        </h4>
+      </section>
+
+      <!-- 주요 서비스 설명 -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            손님이신가요?
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            사장님이신가요?
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <section
+          class="washcarlife_1"
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">aa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
+          <div class="cont_wrap">
+            <div class="txt_wrap">
+              <div>
+                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
+              </div>
+              <div class="detail">
+                <span class="font15">
+                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
+                  세차가 가능합니다
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="washcarlife_2"
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <div class="cont_wrap">
+            <div class="txt_wrap">
+              <div>
+                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
+              </div>
+              <div class="detail">
+                <span class="font15">
+                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
+                  세차가 가능합니다
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 좋은 주요서비스 어필 -->
+      <section class="like">
+        <div class="cont_warp">
+          <h1>좋은 점</h1>
+          <div class="like_acc_tile">
+            <h3>예약 굿</h3>
+            <div class="thumbnail_wrapper">
+              <div class="thumbnail">
+                <div class="centered">
+                  <img src="img/logo5.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="tell_sumit"></section> -->
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="copy_area">
+          <span>세차새차</span>
+          <span>대표</span>
+          <span class="block">사업자번호</span>
+          <span class="block">통신판매업 신고번호 2022-서울중구-1399</span>
+          <span class="block">주소</span>
+          <span><a href="">메일주소</a></span>
+          <ul class="like_area">
+            <li>이용약관</li>
+            <li>전자금융거래 이용약관</li>
+            <li>개인정보 취급방침</li>
+            <li>채용</li>
           </ul>
         </div>
       </div>
-    </nav>
+    </footer>
   </body>
 </html>
+
+<!-- 탭 navbar -->
+<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          손님이신가요?
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          사장님이신가요?
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home-tab-pane"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+        tabindex="0"
+      >
+        손님 환영합니다^^
+        <img src="img/ios16-iphone13-pro-app-library.png" alt="" />
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile-tab-pane"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+        tabindex="0"
+      >
+        사장님 환영합니다^^
+        <img src="img/ios16-iphone13-pro-app-library.png" alt="" />
+      </div>
+    </div> -->

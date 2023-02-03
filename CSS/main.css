@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+  /* overflow: hidden; */
+  font-style: normal;
+  font-size: 16px;
+}
+/* navbar */
+
+.header {
+  height: 65px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.header-img {
+  width: 80px;
+}
+
+/* 첫화면 */
+.main_visual {
+  width: 100%;
+  background-color: #ff8123;
+}
+.main_visual .cont_wrap {
+  padding-bottom: 200px;
+  background: url(/img/ios16-iphone13-pro-app-library.png) no-repeat center
+    bottom;
+  background-size: 192px 293px;
+  background-color: #ff8123;
+  background-position: right bottom;
+}
+.cont_wrap {
+  /* padding-left: 37px; */
+  padding-top: 40px;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.txt_wrap {
+  display: block;
+  padding-right: 81px;
+}
+.big_comment {
+  /* width: 350px;
+  height: 84px; */
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.btn_group {
+  margin-top: 10px;
+  display: flex;
+  margin-left: 10px;
+}
+.appstore_btn {
+  margin-right: 10px;
+}
+.appstore_ic {
+  width: 100px;
+  height: 25px;
+}
+.googkeplay_ic {
+  width: 100px;
+  height: 25px;
+}
+
+/* 중간설명 */
+.comment {
+  box-sizing: border-box;
+  padding: 90px 0;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.comment h4 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 주요 서비스 설명 (사진 오른쪽)*/
+.washcarlife_1 {
+  box-sizing: border-box;
+  height: 600px;
+  padding: 90px 0;
+  margin: 0 auto;
+  display: block;
+}
+.washcarlife_1 .cont_wrap {
+  background-image: url(/img/ios16-iphone13-pro-app-library.png);
+  background-size: 192px 293px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: top left;
+}
+.washcarlife_1 .cont_wrap .txt_wrap {
+  padding: 25px 0 0 400px;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* 주요 서비스 설명 (사진 왼쪽)*/
+.washcarlife_2 {
+  box-sizing: border-box;
+  height: 600px;
+  padding: 90px 0;
+  margin: 0 auto;
+  display: block;
+}
+.washcarlife_2 .cont_wrap {
+  background-image: url(/img/ios16-iphone13-pro-app-library.png);
+  background-size: 192px 293px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: top right;
+}
+.washcarlife2 .cont_wrap .txt_wrap {
+  padding: 25px 0 0 400px;
+}
+
+/* 좋은 주요 서비스 어필 */
+.like .copy_area h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  background-color: gray;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 40px 20px 50px;
+  background-color: #000000;
+}
+.footer {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.footer .copy_area {
+  line-height: 1.7;
+  color: #ffffff;
+}
