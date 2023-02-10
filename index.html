@@ -11,7 +11,7 @@
     <title>세차세차</title>
     <link rel="stylesheet" href="css/main.css" />
     <!-- <script src="js/roading.js" defer></script> -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
@@ -21,7 +21,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <!-- navbar -->
@@ -64,56 +64,54 @@
 
       <!-- 중간설명 -->
       <section class="comment">
-        <h4>
+        <h1>
           가까운 세차장 조회하고 예약하고 가보세요. <br />
           더운 날, 추운 날 기다리지 않고 <br />
           바로 세차를 할 수 있는 서비스, <br />
           세차새차와 함께라면 당신의 일상이 새로워질 거예요
-        </h4>
+        </h1>
       </section>
 
       <!-- 주요 서비스 설명 -->
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="home-tab-pane"
-            aria-selected="true"
-          >
-            손님이신가요?
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="profile-tab-pane"
-            aria-selected="false"
-          >
-            사장님이신가요?
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <section
-          class="washcarlife_1"
-          class="tab-pane fade show active"
-          id="home-tab-pane"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-          tabindex="0"
-        >
-          <div class="cont_wrap">
-            <div class="txt_wrap">
+      <div class="tab">
+        <input id="tab1" type="radio" name="tabs" checked />
+        <label class="tab1_detail1" for="tab1">손님이신가요?</label>
+        <input id="tab2" type="radio" name="tabs" />
+        <label class="tab1_detail2" for="tab2">사장님이신가요?</label>
+        <section id="content_left1">
+          <div class="left_img">
+            <div class="left_txt">
+              <div class="detail">
+                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
+              </div>
+              <div class="detail">
+                <span class="font15">
+                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
+                  세차가 가능합니다
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="content_left2">
+          <div class="right_img">
+            <div class="right_txt">
+              <div class="detail">
+                <span class="title">아**직도 세차장에서 <br />기다리시나요?</span>
+              </div>
+              <div class="detail">
+                <span class="font15">
+                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
+                  세차가 가능합니다
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="content_right1">
+          <div class="right_img">
+            <div class="right_txt">
               <div>
                 <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
               </div>
@@ -126,16 +124,9 @@
             </div>
           </div>
         </section>
-        <section
-          class="washcarlife_2"
-          class="tab-pane fade"
-          id="profile-tab-pane"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-          tabindex="0"
-        >
-          <div class="cont_wrap">
-            <div class="txt_wrap">
+        <section id="content_right2">
+          <div class="left_img">
+            <div class="left_txt">
               <div>
                 <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
               </div>
@@ -151,22 +142,60 @@
       </div>
 
       <!-- 좋은 주요서비스 어필 -->
-      <section class="like">
-        <div class="cont_warp">
-          <h1>좋은 점</h1>
-          <div class="like_acc_tile">
-            <h3>예약 굿</h3>
-            <div class="thumbnail_wrapper">
-              <div class="thumbnail">
-                <div class="centered">
-                  <img src="img/logo5.png" alt="" />
+      <section class="benefit">
+        <div class="like">
+        <div class="cont_like">
+          <div class="like_txt">좋은 점</div>
+          <div class="like_box">
+            <div class="like_acc_tile">
+              <div class="like_title">예약 굿</div>
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <div class="centered">
+                    <img src="img/logo5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like_acc_tile_center">
+              <div class="like_title">예약 굿</div>
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <div class="centered">
+                    <img src="img/logo5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="like_acc_tile">
+              <div class="like_title">예약 굿</div>
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <div class="centered">
+                    <img src="img/logo5.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </section>
-      <!-- <section class="tell_sumit"></section> -->
+      <!-- 전화번호 받는 부분 -->
+      <section class="phone_number">
+        <div class="tell">
+        <div class="cont_tell">
+          <div class="tell_txt">이 서비스 궁금하신가요?</div>
+          <div class="tell_txt2">
+            서비스 출시가 되면 소식을 받아볼 수 있습니다
+          </div>
+          <div class="tell_box">
+            <input class="tel_input" type="tel" placeholder="전화번호를 입력해주세요" />
+            <input class="tel_submit" type="submit"></input>
+          </div>
+        </div>
+      </div>
+      </section>
     </div>
 
     <footer>
