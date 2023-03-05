@@ -1,4 +1,5 @@
 body {
+  padding-top: 0px;
   height: 100%;
   /* overflow: hidden; */
   font-style: normal;
@@ -9,34 +10,53 @@ body {
 }
 
 /* navbar */
-.header {
+/* .header {
   height: 65px;
   max-width: 639x;
   padding-left: 20px;
+} */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 40px;
+  /* max-width: 639x; */
+  padding: 1rem;
+  background: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .header-img {
   width: 110px;
 }
 
 /* 첫화면 */
 .main_visual {
-  width: 100%;
-  background-color: #e8efff;
+  /* height: 100vh;
+  width: 100vw; */
+  /* margin-left: -15px;
+  background: url(img1/firstBackground.png) center bottom;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: linear-gradient(to top, #ffffff, #9ec0f4);
+  /* background-size: 100% 100%; */
 }
-.main_visual .cont_wrap {
-  padding-bottom: 450px;
-  background: url(/img/ios16-iphone13-pro-app-library.png) no-repeat center
-    bottom;
-  /* background-size: 192px 293px; */
-  background-size: 232px 406px;
-  background-color: #e8efff;
-  background-position: center bottom;
-}
+/* .main_visual .cont_wrap {
+  padding-bottom: 435px;
+  background: linear-gradient(to top, #ffffff, #9ec0f4);
+  background: url(/img1/firstContent.png) no-repeat center bottom;
+  background-size: 332px 356px;
+} */
 .cont_wrap {
   /* padding-left: 37px; */
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
-  max-width: 639x;
+  background-size: 100% 100%;
   margin: 0 auto;
 }
 .txt_wrap {
@@ -45,133 +65,109 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-.big_comment {
-  /* width: 350px;
-  height: 84px; */
-  display: block;
-  font-size: 2.5em;
-  font-weight: bold;
+.phrase {
+  width: 230px;
+  height: 137.1819px;
 }
-.btn_group {
-  margin-top: 10px;
-  display: flex;
-  margin-left: 10px;
+.receivingNews {
+  padding-top: 35px;
 }
-.appstore_btn {
-  margin-right: 10px;
+.receivingNews_btn {
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 4px 15px;
+  color: white;
+  background-color: #3d84ed;
+  /* box-shadow: 1px 1px 1px 1px gray; */
+  border-radius: 15px;
+  width: 170px;
+  height: 30px;
 }
-.appstore_ic {
-  /* width: 100px; */
-  height: 25px;
+.cellphone {
+  padding-top: 35px;
 }
-.googkeplay_ic {
-  /* width: 100px; */
-  height: 25px;
+.cellphone_img {
+  width: 305px;
+  height: 434.685px;
 }
 
 /* 중간설명 */
 .comment {
-  box-sizing: border-box;
-  padding: 90px 0;
-  text-align: center;
-
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
+  padding: 44px 0px;
 }
 
-.comment h1 {
-  max-width: 639x;
-  margin: 0 auto;
+.comment_txt {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 /* 주요서비스 */
 .tab {
-  max-width: 639x;
-  padding-top: 50px;
-  margin: 0 auto;
-  background: #ffffff;
+  position: sticky;
+  top: 40px;
+
+  height: 23.6533px;
+  /* max-width: 639x; */
+  background: white;
+  /* font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
   text-align: center;
+  /* padding-top: 5px; */
 }
-#tab1 {
-  display: none;
+.nav-item {
+  width: 50%;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bolder;
 }
-#tab2 {
-  display: none;
+.tab_txt {
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
 }
-.tab1_detail1 {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 16px 25px;
-  font-weight: 600;
-  text-align: center;
-  font-size: 30px;
-  color: #bbb;
+.clicked {
+  color: #000000;
 }
-.tab1_detail2 {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 16px 25px;
-  margin-left: 10px;
-  font-weight: 600;
-  text-align: center;
-  font-size: 30px;
-  color: #bbb;
+#pills-home {
+  padding-top: 100px;
 }
-.tab input:checked + label {
-  color: #555;
-  /* border: 1px solid #ddd; */
-  border-bottom: 3px solid black;
+#pills-profile {
+  padding-top: 100px;
 }
 
-#tab1:checked ~ #content_left1,
-#tab1:checked ~ #content_left2,
-#tab2:checked ~ #content_right1,
-#tab2:checked ~ #content_right2 {
+.tab-content {
+  background-color: #ffffff;
+}
+.tab_content_g {
+  background: linear-gradient(to top, #ffffff, #9ec0f4, #ffffff 75%);
+}
+.tab_content_img {
+  padding-top: 23.6533px;
   display: block;
+  margin: auto;
+  width: 309.776px;
+  height: 399.633px;
 }
-
-#content_left1 {
-  display: none;
-  padding: 50px 0;
-  /* border-top: 1px solid #ddd; */
-  box-sizing: border-box;
-  height: 600px;
-}
-#content_right1 {
-  display: none;
-  padding: 50px 0;
-  /* border-top: 1px solid #ddd; */
-  box-sizing: border-box;
-  height: 600px;
-}
-
-/* 주요 서비스 설명 (사진 왼쪽)*/
-.left_img {
-  background-image: url(/img/ios16-iphone13-pro-app-library.png);
-  background-size: 190px 293px;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center bottom;
-}
-.left_img .left_txt {
-  /* margin-left: 190px; */
-  height: 193px;
-  /* margin: 50px 0 50px 190px; */
-  /* padding: 50px 0 50px 190px; */
-}
-.title {
-  font-size: 40px;
-  font-weight: bold;
+.tab-header {
+  position: sticky;
 }
 
 /* 좋은 주요 서비스 어필 */
 .benefit {
-  background-color: #f5f5f5;
+  background: linear-gradient(to top, #9ec0f4, #ffffff 80%);
+  /* background-color: #f5f5f5; */
 }
 .like {
   max-width: 639x;
   height: 1000px;
   margin: 0 auto;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 .like_txt {
   font-size: 40px;
@@ -180,19 +176,12 @@ body {
   padding-top: 71px;
 }
 .like_acc_tile {
-  width: 300px;
-  height: 300px;
-  background-color: aqua;
+  width: 260px;
+  height: 266px;
+  background-color: #d9d9d9;
   text-align: center;
-  margin-top: 42px;
-  margin: 0 auto;
-}
 
-.like_acc_tile {
-  width: 203px;
-  height: 207px;
-  background-color: aqua;
-  text-align: center;
+  margin: 0 auto;
   margin-top: 42px;
 }
 .like_title {
@@ -208,57 +197,130 @@ body {
 
 /* 전화번호 받는 부분 */
 .phone_number {
-  background-color: #d9d9d9;
+  background-color: #2e7acc;
 }
 .tell {
   max-width: 639x;
-  height: 430px;
+  height: 429px;
   margin: 0 auto;
-  background-color: #d9d9d9;
+  background-color: #2e7acc;
 }
 .tell_txt {
-  font-size: 40px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
-  padding-top: 71px;
+  padding-top: 38.26px;
+  color: white;
+  letter-spacing: -2px;
 }
 .tell_txt2 {
-  font-size: 25px;
+  font-size: 17px;
   font-weight: bold;
   text-align: center;
+  color: white;
+  letter-spacing: -2px;
 }
 .tell_box {
-  margin-top: 37px;
+  /* display: block; */
+  /* margin-top: 37px; */
+  margin-top: 11.88px;
 }
 .tel_input {
-  font-size: 25px;
-  color: #9e9e9e;
-  width: 450px;
-  height: 55px;
-  margin: 0 auto;
+  display: block;
+  margin: auto;
+
+  font-size: 13px;
+  color: #1a1f27;
+  width: 222px;
+  height: 24px;
+  /* margin: 0 auto; */
 }
-.tel_submit {
-  font-size: 25px;
+.tel_btn {
+  display: block;
+  margin: auto;
+
+  font-size: 15px;
   color: white;
   font-weight: bold;
 
   margin: 0 auto;
-  margin-top: 25px;
-  width: 250px;
-  height: 55px;
-  background-color: #666666;
+  margin-top: 11.88px;
+  width: 86px;
+  height: 25px;
+  background-color: black;
+  border-color: none;
 }
+.list_Img {
+  /* display: block;
+  margin: auto; */
+  float: right;
+  /* margin-left: 13.114px; */
+  /* padding-left: 13.114px; */
+  width: 325.8199px;
+  height: 243.6902px;
+  margin-top: 15.14px;
+}
+
 /* footer */
 footer {
   overflow: hidden;
   font-size: 12px;
   /* padding: 40px 20px 50px; */
-  background-color: #767676;
+  background-color: #1a1f27;
 }
 .footer {
   max-width: 639x;
   margin: 0 auto;
+  height: 177px;
 }
+.copy_area {
+  display: flex;
+  margin-top: 10px;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+.logo2 {
+  width: 60px;
+  height: 14.1726px;
+  margin-left: 8px;
+}
+.arrow-up {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: 0;
+  padding: 5px 84.5px;
+  font-size: 30px;
+  line-height: 50px;
+  right: 16px;
+  bottom: 16px;
+  transform: perspective();
+  border: none;
+  background-color: #9db8ff;
+  /* float: bottom; */
+  text-decoration: none;
+  font-weight: bold;
+
+  position: sticky;
+  background-color: #9db8ff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+
+  text-align: center;
+}
+
+.arrow-up:visited {
+  color: black;
+}
+
 .footer .copy_area span {
   /* line-height: 1.7; */
   color: #333333;
