@@ -16,6 +16,7 @@ body {
   padding-left: 20px;
 } */
 header {
+  /* position: fixed; */
   position: sticky;
   top: 0;
   left: 0;
@@ -29,6 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .header-img {
@@ -45,6 +47,7 @@ header {
   background-size: cover; */
   background: linear-gradient(to top, #ffffff, #9ec0f4);
   /* background-size: 100% 100%; */
+  margin-top: 40px;
 }
 /* .main_visual .cont_wrap {
   padding-bottom: 435px;
@@ -108,8 +111,9 @@ header {
 /* 주요서비스 */
 .tab {
   position: sticky;
-  top: 40px;
+  top: 39.5px;
 
+  padding-top: 5px;
   height: 23.6533px;
   /* max-width: 639x; */
   background: white;
@@ -168,12 +172,6 @@ header {
   height: 1000px;
   margin: 0 auto;
   /* background-color: #f5f5f5; */
-}
-.like_txt {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 71px;
 }
 .like_acc_tile {
   width: 260px;
@@ -235,19 +233,21 @@ header {
   height: 24px;
   /* margin: 0 auto; */
 }
-.tel_btn {
+#tel_btn {
   display: block;
   margin: auto;
 
   font-size: 15px;
-  color: white;
+  /* color: white; */
   font-weight: bold;
 
   margin: 0 auto;
   margin-top: 11.88px;
-  width: 86px;
+
+  padding-top: 1px;
+  width: 90px;
   height: 25px;
-  background-color: black;
+  /* background-color: black; */
   border-color: none;
 }
 .list_Img {
@@ -287,38 +287,107 @@ footer {
   height: 14.1726px;
   margin-left: 8px;
 }
-.arrow-up {
-  position: sticky;
+
+/* 팝업창 */
+.pop-up {
+  /* position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+
+  background-color: #63a2ff;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
+.pop-up_logo {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  display: block;
+}
+.close {
+  /* margin: 0 auto; */
+  display: block;
+  float: right;
+  padding-left: 100%;
+}
+.pop-up_logo2 {
+  width: 135px;
+  height: 31.896px;
+  margin: auto;
+  display: block;
+}
+.pop-up_txt {
+  font-size: 25px;
+  font-weight: 550;
+  color: white;
+  text-align: center;
+}
+.btn-dark {
+  width: 300px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+/* 소식 받아보기 */
+#arrow-up {
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-
   margin: 0;
-  padding: 5px 84.5px;
+  /* transform: perspective(); */
+  border: none;
+  background-color: #9db8ff;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  transition: opacity 300ms ease-in;
+  color: black;
+
+  opacity: 0;
+
+  /* position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  font-size: 50px;
+  opacity: 0;
+  pointer-events: none;
+  color: black;
+  background-color: #9db8ff;
+  transition: opacity 300ms ease-in; */
+
+  /* padding: 5px 84.5px; */
+  /* right: 16px; */
+  /* bottom: 16px; */
+  /* float: bottom; */
+  /* 
+  width: 50px;
+  height: 50px;
   font-size: 30px;
   line-height: 50px;
   right: 16px;
   bottom: 16px;
-  transform: perspective();
-  border: none;
-  background-color: #9db8ff;
-  /* float: bottom; */
-  text-decoration: none;
-  font-weight: bold;
-
-  position: sticky;
-  background-color: #9db8ff;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4rem;
-
-  text-align: center;
+  transform: perspective(); */
 }
 
-.arrow-up:visited {
-  color: black;
+#arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.download_btn {
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 60px;
+  color: #000000;
 }
 
 .footer .copy_area span {

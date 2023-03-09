@@ -1,17 +1,5 @@
 'use strict';
 
-//넷바 색상 변경
-// let :변하는 상수 | const :변하지 않는 상수
-const navbar = document.querySelector('.header');
-const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-  if (window.scrollY > navbarHeight) {
-    navbar.classList.add('#ffffff');
-  } else {
-    navbar.classList.remove('#ffffff');
-  }
-});
-
 //home 투명도 조절
 const home = document.querySelector('.main_visual');
 const homeHeight = home.getBoundingClientRect().height;
@@ -25,7 +13,7 @@ document.addEventListener('scroll', function () {
 });
 
 // arrow up 버튼 스크롤 될 때 생성
-const arrowUp = document.querySelector('.arrow-up');
+const arrowUp = document.querySelector('#arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
     arrowUp.classList.add('visible');
