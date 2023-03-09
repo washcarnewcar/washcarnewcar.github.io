@@ -47,7 +47,7 @@ header {
   background-size: cover; */
   background: linear-gradient(to top, #ffffff, #9ec0f4);
   /* background-size: 100% 100%; */
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 /* .main_visual .cont_wrap {
   padding-bottom: 435px;
@@ -72,7 +72,7 @@ header {
   width: 230px;
   height: 137.1819px;
 }
-.receivingNews {
+#btn-News {
   padding-top: 35px;
 }
 .receivingNews_btn {
@@ -269,7 +269,7 @@ footer {
   background-color: #1a1f27;
 }
 .footer {
-  max-width: 639x;
+  max-width: 639px;
   margin: 0 auto;
   height: 177px;
 }
@@ -289,23 +289,44 @@ footer {
 }
 
 /* 팝업창 */
-.pop-up {
+#pop-up {
   /* position: sticky;
   left: 0;
   right: 0;
   bottom: 0; */
 
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 49px;
+  /* transform: perspective(); */
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 300ms ease-in;
+  color: black;
+  opacity: 0;
+
   background-color: #63a2ff;
   width: 100%;
-  height: 300px;
-  margin: 0 auto;
-  display: block;
+  height: 301.23px;
+  margin: 0;
 }
-.pop-up_logo {
+#pop-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+#pop-up.close {
+  opacity: 0;
+  pointer-events: auto;
+}
+.img-pop-up_logo {
   width: 65px;
   height: 65px;
   margin: auto;
   display: block;
+  margin-top: 10px;
 }
 .close {
   /* margin: 0 auto; */
@@ -313,23 +334,26 @@ footer {
   float: right;
   padding-left: 100%;
 }
-.pop-up_logo2 {
+.img-pop-up_logo2 {
   width: 135px;
   height: 31.896px;
   margin: auto;
   display: block;
+  margin-top: 30.21px;
 }
 .pop-up_txt {
-  font-size: 25px;
-  font-weight: 550;
+  font-size: 26px;
+  /* font-weight: 550; */
   color: white;
   text-align: center;
+  margin-top: 15px;
 }
 .btn-dark {
   width: 300px;
   height: 40px;
   border-radius: 30px;
   font-size: 13px;
+  margin-top: 25px;
 }
 
 /* 소식 받아보기 */
@@ -345,7 +369,7 @@ footer {
   text-decoration: none;
   font-weight: bold;
   width: 100%;
-  height: 4rem;
+  height: 50px;
   text-align: center;
   transition: opacity 300ms ease-in;
   color: black;
@@ -385,8 +409,8 @@ footer {
 
 .download_btn {
   text-decoration: none;
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 25px;
+  line-height: 50px;
   color: #000000;
 }
 
