@@ -33,6 +33,18 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
 });
 
+// pop-up 버튼 클릭했을 때 home으로 올라가기
+const btnGuest = document.querySelector('#home-tab');
+btnGuest.addEventListener('click', () => {
+  scrollIntoView('#home-tab-pane');
+});
+
+// pop-up 버튼 클릭했을 때 home으로 올라가기
+const btnOwner = document.querySelector('#profile-tab');
+btnOwner.addEventListener('click', () => {
+  scrollIntoView('#profile-tab-pane');
+});
+
 // pop-up 버튼 스크롤 될 때 생성
 const popUp = document.querySelector('#pop-up');
 document.addEventListener('scroll', () => {
