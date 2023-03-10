@@ -126,20 +126,16 @@ header {
   text-align: center;
   /* padding-top: 5px; */
 }
-#home-tab {
+.nav-link {
   background-color: #ffffff;
+  color: #000000;
 }
-/* #home-tab:focus {
-  color: #3d84ed;
-} */
-#profile-tab {
+
+.active {
   background-color: #ffffff;
-  /* color: #3d84ed; */
+  color: #3d84ed !important;
+  z-index: 1;
 }
-/* #profile-tab:focus {
-  color: #3d84ed;
-}
-*/
 .nav-item {
   width: 50%;
   background-color: white;
@@ -150,8 +146,12 @@ header {
   cursor: pointer;
   text-decoration: none;
 }
-.clicked {
-  color: #000000;
+#home-tab.clicked {
+  color: #3d84ed;
+}
+
+#profile-tab.clicked {
+  color: #3d84ed;
 }
 
 #home-tab-pane {
@@ -277,7 +277,7 @@ header {
 
   width: 325.8199px;
   height: 243.6902px;
-  margin-top: 15.14px;
+  margin-top: 16px;
 }
 
 /* footer */

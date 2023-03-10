@@ -17,7 +17,6 @@ const receivingNews = document.querySelector('#btn-News');
 receivingNews.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
 });
-
 // arrow up 버튼 스크롤 될 때 생성
 const arrowUp = document.querySelector('#arrow-up');
 document.addEventListener('scroll', () => {
@@ -27,19 +26,17 @@ document.addEventListener('scroll', () => {
     arrowUp.classList.remove('visible');
   }
 });
-
 // arrow up 버튼 클릭했을 때 home으로 올라가기
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
 });
 
-// pop-up 버튼 클릭했을 때 home으로 올라가기
+// btnGuest 버튼 클릭했을 때 home으로 올라가기
 const btnGuest = document.querySelector('#home-tab');
 btnGuest.addEventListener('click', () => {
   scrollIntoView('#home-tab-pane');
 });
-
-// pop-up 버튼 클릭했을 때 home으로 올라가기
+// btnOwner 버튼 클릭했을 때 home으로 올라가기
 const btnOwner = document.querySelector('#profile-tab');
 btnOwner.addEventListener('click', () => {
   scrollIntoView('#profile-tab-pane');
@@ -58,15 +55,13 @@ document.addEventListener('scroll', () => {
     popUp.classList.remove('visible');
   }
 });
-
-// pop-up 버튼 클릭했을 때 home으로 올라가기
+// Btn_PopUp 버튼 클릭했을 때 home으로 올라가기
 const Btn_PopUp = document.querySelector('#btn-pop-up');
 Btn_PopUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
   popUp.classList.add('close');
 });
-
-// pop-up 버튼 스크롤 될 때 생성
+// btnClose 버튼 스크롤 될 때 생성
 const btnClose = document.querySelector('#btn-close');
 btnClose.addEventListener('click', () => {
   popUp.classList.add('close');
