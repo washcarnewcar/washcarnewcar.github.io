@@ -155,18 +155,80 @@ header {
 }
 
 #home-tab-pane {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 #profile-tab-pane {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .tab-content {
   background-color: #ffffff;
   /* margin-top: 100px; */
 }
+.tab-content-s {
+  padding-bottom: 25.18px;
+}
+.tab_content_phrase {
+  /* height: 76px; */
+  /* padding: 45px 0px 55px 27px; */
+  padding-left: 27px;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  /* width: 130px; */
+
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: -3px;
+}
+/* .tab_content_phrase-img {
+  height: 70px;
+  width: 298px;
+} */
+.tab_content_phrase3 {
+  /* height: 76px; */
+  /* padding: 45px 0px 55px 27px; */
+  padding-left: 27px;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  /* width: 130px; */
+}
+.tab_content_phrase3-img {
+  height: 114px;
+  width: 306px;
+}
 .tab_content_g {
-  background: linear-gradient(to top, #ffffff, #9ec0f4, #ffffff 75%);
+  /* background: linear-gradient(
+    to top,
+    #ffffff 1%,
+    #f0f5fd 5%,
+    #9ec0f4 30%,
+    #9ec0f4 60%,
+    #f0f5fd 90%,
+    #ffffff 100%
+  ); */
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(251, 252, 254, 0.99) 9%,
+    rgba(240, 245, 253, 0.96) 16%,
+    rgba(222, 234, 251, 0.92) 24%,
+    rgba(197, 218, 248, 0.86) 31%,
+    rgba(164, 197, 245, 0.78) 39%,
+    rgba(124, 172, 241, 0.68) 46%,
+    rgba(76, 141, 235, 0.56) 53%,
+    rgba(22, 107, 230, 0.43) 60%,
+    rgba(12, 101, 229, 0.4) 61%,
+    rgba(21, 106, 229, 0.4) 70%,
+    rgba(49, 124, 232, 0.4) 77%,
+    rgba(95, 154, 237, 0.4) 85%,
+    rgba(161, 195, 244, 0.4) 92%,
+    rgba(245, 248, 253, 0.4) 99%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+
+  padding-bottom: 25.18px;
+  /* border: solid #000000; */
 }
 .tab_content_img {
   /* padding-top: 23.6533px; */
@@ -183,22 +245,41 @@ header {
 /* 좋은 주요 서비스 어필 */
 .benefit {
   background: linear-gradient(to top, #9ec0f4, #ffffff 80%);
+  padding-bottom: 25.18px;
   /* background-color: #f5f5f5; */
 }
 .like {
   max-width: 639x;
-  height: 1000px;
+  /* height: 1000px; */
   margin: 0 auto;
   /* background-color: #f5f5f5; */
 }
+
 .like_acc_tile {
-  width: 260px;
+  /* width: 260px;
   height: 266px;
   background-color: #d9d9d9;
   text-align: center;
 
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top: 42px; */
+
+  /* box-sizing: border-box;
+
+  position: absolute; */
+  width: 265px;
+  height: 355px;
+  left: 47px;
+
+  display: block;
+  margin: 45px auto 0px auto;
+
+  /* top: 24px; */
+
+  background: #ffffff;
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 .like_title {
   font-size: 40px;
@@ -220,6 +301,7 @@ header {
   height: 429px;
   margin: 0 auto;
   background-color: #2e7acc;
+  position: relative;
 }
 .tell_txt {
   font-size: 22px;
@@ -268,16 +350,18 @@ header {
   /* background-color: black; */
   border-color: none;
 }
-.list_Img {
-  display: block;
-  margin: auto;
-  /* float: right; */
+.last_Img {
+  /* display: block; */
+  /* margin: 0 auto; */
+  float: right;
   /* margin-left: 13.114px; */
   /* padding-left: 13.114px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
   width: 325.8199px;
   height: 243.6902px;
-  margin-top: 16px;
 }
 
 /* footer */
@@ -286,6 +370,7 @@ footer {
   font-size: 12px;
   /* padding: 40px 20px 50px; */
   background-color: #1a1f27;
+  margin: auto;
 }
 .footer {
   max-width: 639px;
