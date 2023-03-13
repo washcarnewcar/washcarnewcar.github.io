@@ -165,7 +165,7 @@ header {
   background-color: #ffffff;
   /* margin-top: 100px; */
 }
-.tab-content-s {
+.tab-content_s {
   padding-bottom: 25.18px;
 }
 .tab_content_phrase {
@@ -180,6 +180,9 @@ header {
   font-weight: bold;
   color: black;
   letter-spacing: -3px;
+  text-align: left;
+  max-width: 639px;
+  margin: 0 auto;
 }
 /* .tab_content_phrase-img {
   height: 70px;
@@ -233,10 +236,11 @@ header {
 .tab_content_img {
   /* padding-top: 23.6533px; */
   margin-top: 23.6533px;
-  display: block;
-  margin: auto;
   width: 309.776px;
   height: 399.633px;
+  padding-bottom: 25.18px;
+  display: block;
+  margin: auto;
 }
 .tab-header {
   position: sticky;
@@ -249,7 +253,7 @@ header {
   /* background-color: #f5f5f5; */
 }
 .like {
-  max-width: 639x;
+  max-width: 639px;
   /* height: 1000px; */
   margin: 0 auto;
   /* background-color: #f5f5f5; */
@@ -376,7 +380,7 @@ footer {
   max-width: 639px;
   margin: 0 auto;
   /* height: 177px; */
-  height: 300px;
+  height: 200px;
 }
 .copy_area {
   display: flex;
