@@ -1,277 +1,347 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/favicon1.png" />
-    <script
-      src="https://kit.fontawesome.com/b3ff0b2f81.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>세차세차</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- <script src="js/roading.js" defer></script> -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script> -->
-  </head>
-  <body>
-    <!-- navbar -->
-    <header>
-      <div class="header">
-        <h1>
-          <a href="" class="banlife">
-            <img class="header-img" src="img/logo5.png" alt="세차새차" />
-          </a>
-        </h1>
-        <!-- <div class="link" id="gnb">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/img/Logo.png" />
+  <script src="https://kit.fontawesome.com/40a67f0cba.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>세차세차</title>
+  <link rel="stylesheet" href="/index.css" />
+  <script src="/js/download.js" defer></script>
+
+  <script>
+    // HTML 폼 요소 가져오기
+    var form = document.getElementById("myForm");
+    var input = document.getElementById("myInput");
+
+    // 폼 제출 이벤트 처리
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // 폼 제출 기본 동작 막기
+
+      // API 호출
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            alert("저장되었습니다.");
+          } else {
+            alert("전송 실패");
+          }
+        }
+      };
+      xhttp.open("POST", "https://api.example.com/", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("data=" + encodeURIComponent(input.value));
+    });
+  </script>
+
+</head>
+
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAHWwSFjSbQAX0rd9ozRureBWdJAAyPaHU",
+      authDomain: "washcarnewcar.firebaseapp.com",
+      projectId: "washcarnewcar",
+      storageBucket: "washcarnewcar.appspot.com",
+      messagingSenderId: "970966999013",
+      appId: "1:970966999013:web:b7dc087e68af7bc91a990c",
+      measurementId: "G-JB88FMTDR9"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="https://apis.google.com/js/api.js" />
+
+  <script>
+    function saveData() {
+      var name = document.getElementById('name').value;
+      var data = [[name]];
+      gapi.client.sheets.spreadsheets.values
+        .append({
+          spreadsheetId: '1Fr0wQIG6soL2X_0U4G_kKb1Y43-FFRVNP9FZow0YZNs',
+          range: 'Sheet1!A1',
+          valueInputOption: 'USER_ENTERED',
+          resource: {
+            values: data,
+          },
+        })
+        .then(
+          function (response) {
+            console.log(response);
+            alert('Data saved successfully');
+          },
+          function (error) {
+            console.log('Error saving data: ' + error);
+            alert('Error saving data');
+          }
+        );
+    }
+  </script> -->
+
+  <!-- navbar -->
+  <header>
+    <div class="header">
+      <div>
+        <a href="" class="banlife">
+          <img class="header-img" src="/img/navbarPhrase.png" alt="세차새차" />
+        </a>
+      </div>
+      <!-- <div class="link" id="gnb">
           <a href="">예약하기/다운로드</a>
         </div> -->
-      </div>
-    </header>
+    </div>
+  </header>
 
-    <div id="content">
-      <!-- 첫페이지 -->
-      <section class="main_visual">
-        <div class="cont_wrap">
-          <div class="txt_wrap">
-            <h1 class="big_comment">
-              세차장 예약 <br />세차새차에서 쉽고 간편하게
-            </h1>
-            <div class="btn_group">
-              <div class="appstore_btn">
-                <a href="https://www.ban-life.com/">
-                  <img src="img/logo5.png" class="appstore_ic" />
-                </a>
-              </div>
-              <div class="googkeplay_btn">
-                <a href="https://www.ban-life.com/content/list?t=01">
-                  <img src="img/logo5.png" class="googkeplay_ic" />
-                </a>
-              </div>
-            </div>
+  <div id="home">
+    <!-- 첫페이지 -->
+    <section class="main_visual">
+      <div class="cont_wrap">
+        <div class="txt_wrap">
+          <img class="phrase" src="/img/firstPhrase.png" alt="">
+          <div id="btn-News">
+            <div class="receivingNews_btn">출시 소식 받아보기</div>
           </div>
-        </div>
-      </section>
-
-      <!-- 중간설명 -->
-      <section class="comment">
-        <h1>
-          가까운 세차장 조회하고 예약하고 가보세요. <br />
-          더운 날, 추운 날 기다리지 않고 <br />
-          바로 세차를 할 수 있는 서비스, <br />
-          세차새차와 함께라면 당신의 일상이 새로워질 거예요
-        </h1>
-      </section>
-
-      <!-- 주요 서비스 설명 -->
-      <div class="tab">
-        <input id="tab1" type="radio" name="tabs" checked />
-        <label class="tab1_detail1" for="tab1">손님이신가요?</label>
-        <input id="tab2" type="radio" name="tabs" />
-        <label class="tab1_detail2" for="tab2">사장님이신가요?</label>
-        <section id="content_left1">
-          <div class="left_img">
-            <div class="left_txt">
-              <div class="detail">
-                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
-              </div>
-              <div class="detail">
-                <span class="font15">
-                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
-                  세차가 가능합니다
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="content_left2">
-          <div class="right_img">
-            <div class="right_txt">
-              <div class="detail">
-                <span class="title">아**직도 세차장에서 <br />기다리시나요?</span>
-              </div>
-              <div class="detail">
-                <span class="font15">
-                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
-                  세차가 가능합니다
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="content_right1">
-          <div class="right_img">
-            <div class="right_txt">
-              <div>
-                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
-              </div>
-              <div class="detail">
-                <span class="font15">
-                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
-                  세차가 가능합니다
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="content_right2">
-          <div class="left_img">
-            <div class="left_txt">
-              <div>
-                <span class="title">아직도 세차장에서 <br />기다리시나요?</span>
-              </div>
-              <div class="detail">
-                <span class="font15">
-                  세차새차에서 예약한다면 세차장에서 기다리지 않고 <br />바로
-                  세차가 가능합니다
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- 좋은 주요서비스 어필 -->
-      <section class="benefit">
-        <div class="like">
-        <div class="cont_like">
-          <div class="like_txt">좋은 점</div>
-          <div class="like_box">
-            <div class="like_acc_tile">
-              <div class="like_title">예약 굿</div>
-              <div class="thumbnail_wrapper">
-                <div class="thumbnail">
-                  <div class="centered">
-                    <img src="img/logo5.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="like_acc_tile_center">
-              <div class="like_title">예약 굿</div>
-              <div class="thumbnail_wrapper">
-                <div class="thumbnail">
-                  <div class="centered">
-                    <img src="img/logo5.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="like_acc_tile">
-              <div class="like_title">예약 굿</div>
-              <div class="thumbnail_wrapper">
-                <div class="thumbnail">
-                  <div class="centered">
-                    <img src="img/logo5.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="cellphone">
+            <img class="cellphone_img" src="/img/firstContent.webp" alt="">
           </div>
         </div>
       </div>
-      </section>
-      <!-- 전화번호 받는 부분 -->
-      <section class="phone_number">
-        <div class="tell">
-        <div class="cont_tell">
-          <div class="tell_txt">이 서비스 궁금하신가요?</div>
-          <div class="tell_txt2">
-            서비스 출시가 되면 소식을 받아볼 수 있습니다
-          </div>
-          <div class="tell_box">
-            <input class="tel_input" type="tel" placeholder="전화번호를 입력해주세요" />
-            <input class="tel_submit" type="submit"></input>
-          </div>
-        </div>
+    </section>
+
+    <!-- 중간설명 -->
+    <section class="comment">
+      <div class="comment_txt">
+        내 주변 모든 세차장 비교 한 곳에서 하세요
+        <br />쉽고 빠르게 바로 예약하세요
+        <br />세차새차와 함께라면 당신의 세차가 즐거워질 거예요
       </div>
-      </section>
+    </section>
+
+    <!-- 주요 서비스 설명 -->
+    <div class="tab" id="tab">
+      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
+            onclick="location.href='#home-tab-pane'">
+            손님이신가요?
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"
+            onclick="location.href='#profile-tab-pane'">
+            사장님이신가요?
+          </button>
+        </li>
+      </ul>
     </div>
 
-    <footer>
-      <div class="footer">
-        <div class="copy_area">
-          <span>세차새차</span>
-          <span>대표</span>
-          <span class="block">사업자번호</span>
-          <span class="block">통신판매업 신고번호 2022-서울중구-1399</span>
-          <span class="block">주소</span>
-          <span><a href="">메일주소</a></span>
-          <ul class="like_area">
-            <li>이용약관</li>
-            <li>전자금융거래 이용약관</li>
-            <li>개인정보 취급방침</li>
-            <li>채용</li>
-          </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- 손님 -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="tab_content_g">
+          <div class="tab_content_phrase">
+            세차장 검색은 <br />세차새차에서
+          </div>
+          <!-- <img class="img1" src="/img/img1.png" alt="">
+          <img class="img2" src="/img/img2.png" alt=""> -->
+          <img class="tab_content_img" src="/img/guest_content1-Img.webp" alt="">
+        </div>
+        <div class="tab_content_s">
+          <div class="tab_content_phrase">
+            시간과 차종을 알려주세요 <br /> 최고 세차 품질과 서비스로 <br /> 보답합니다.
+          </div>
+          <img class="tab_content_img" src="/img/guest_content2-Img.webp" alt="">
+        </div>
+        <div class="tab_content_g">
+          <div class="tab_content_phrase">
+            세차 일정 관리 <br /> 세차새차에서 한 번에
+          </div>
+          <img class="tab_content_img-one" src="/img/guest_content3-Img.webp" alt="">
+        </div>
+        <div class="tab_conten_s">
+          <div class="tab_content_phrase">
+            실시간으로 업데이트 되는 <br /> 세차 현황을 받아보세요
+          </div>
+          <img class="tab_content_img" src="/img/guest_content4-Img.webp" alt="">
         </div>
       </div>
-    </footer>
-    <button class="arrow-up">
-      <i class="fa-solid fa-download"></i>
-    </button>
-  </body>
-</html>
 
-<!-- 탭 navbar -->
-<!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#home-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="home-tab-pane"
-          aria-selected="true"
-        >
-          손님이신가요?
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#profile-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="profile-tab-pane"
-          aria-selected="false"
-        >
-          사장님이신가요?
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div
-        class="tab-pane fade show active"
-        id="home-tab-pane"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-        tabindex="0"
-      >
-        손님 환영합니다^^
-        <img src="img/ios16-iphone13-pro-app-library.png" alt="" />
+      <!-- 사장 -->
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="tab_content_s">
+          <div class="tab_content_phrase">
+            세차새차와 함께
+            <br />매출을 늘리고
+            <br />비용은 줄이고
+          </div>
+          <img class="tab_content_img" src="/img/owner_content1-img.png" alt="">
+        </div>
+        <div class="tab_content_g">
+          <div class="tab_content_phrase">
+            세차새차에서<br /> 더 많은 손님과 만나세요
+          </div>
+          <img class="tab_content_img-one" src="/img/owner_content2-img.webp" alt="">
+        </div>
+        <div class="tab_content_s">
+          <div class="tab_content_phrase">
+            가입과 동시에 <br /> 우리 세차장만의<br /> 홈페이지가 무료로
+          </div>
+          <img class="tab_content_img" src="/img/owner_content3-img.webp" alt="">
+        </div>
+        <div class="tab_content_g">
+          <div class="tab_content_phrase">
+            복잡한 스케줄 고민은 그만 <br /> 세차새차에서 간편하게
+          </div>
+          <img class="tab_content_img" src="/img/owner_content4-img.webp" alt="">
+        </div>
+
+        <!-- 좋은 주요서비스 어필 -->
+        <div class="benefit">
+          <div class="benefit_phrase">
+            똑똑하게 <br /> 손님과 소통하세요 <br /> 알림톡이 전송됩니다.
+          </div>
+          <div class="like">
+            <div class="like_acc_tile">
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <img class="like_icon1" src="/img/Icon1.webp" alt="">
+                </div>
+                <div class="like_title">
+                  세차 예약
+                </div>
+                <div class="like_phrase">
+                  세차 예약 시
+                  <br />번거롭게 손님과 통화 할 필요 없어요.
+                </div>
+              </div>
+            </div>
+            <div class="like_acc_tile">
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <img class="like_icon2" src="/img/Icon2.webp" alt="">
+                </div>
+                <div class="like_title">
+                  세차 1시간 전에
+                </div>
+                <div class="like_phrase">
+                  세차 1시간 전에
+                  <br />자동으로 알람이 울려요.
+                </div>
+              </div>
+            </div>
+            <div class="like_acc_tile">
+              <div class="thumbnail_wrapper">
+                <div class="thumbnail">
+                  <img class="like_icon3" src="/img/Icon3.webp" alt="">
+                </div>
+                <div class="like_title">
+                  세차 완료
+                </div>
+                <div class="like_phrase">
+                  버튼 하나만 누르세요.
+                  <br />메세지는 저희가 보내드릴게요.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div
-        class="tab-pane fade"
-        id="profile-tab-pane"
-        role="tabpanel"
-        aria-labelledby="profile-tab"
-        tabindex="0"
-      >
-        사장님 환영합니다^^
-        <img src="img/ios16-iphone13-pro-app-library.png" alt="" />
+    </div>
+  </div>
+
+  <!-- 전화번호 받는 부분 -->
+  <section id="receivingNews" class="phone_numbr">
+    <div class="tell">
+      <div class="cont_tell">
+        <div class="tell_txt">이 서비스 궁금하신가요?</div>
+        <div class="tell_txt2">
+          서비스 출시가 되면 소식을 받아볼 수 있습니다
+        </div>
+        <div class="tell_box">
+          <form id="myForm">
+            <!-- <label for="myInput">입력:</label> -->
+            <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
+            <button id="tel_btn" type="submit">제출하기</button>
+          </form>
+          <!-- <form action="/examples/media/action_target.php" method="post" id="loginForm"> -->
+          <!-- <input class="tel_input" type="tel" placeholder="전화번호를 입력해주세요" /> -->
+          <!-- 이름 : <input type="text" name="st_name"><br>
+                학번 : <input type="text" name="stt_d"><br>
+                학과 : <input type="text" name="department"><br><br> -->
+          <!-- </form> -->
+          <!-- <button id="tel_btn" type="submit" form="loginForm" class="btn btn-outline-light">제출하기</button> -->
+          <!-- <button onclick="saveDataToSheet()">Save Data to Google Sheets</button> -->
+          <!-- <button id="tel_btn" type="submit" form="loginForm" class="btn btn-dark">제출하기</button> -->
+          <!-- <button id="tel_btn" type="submit" form="loginForm">제출하기</button> -->
+          <!-- <input class="tel_btn" type="submit" value='제출하기'/> -->
+        </div>
+        <img class="last_Img" src="/img/lastImg.webp" alt="">
       </div>
-    </div> -->
+    </div>
+  </section>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="copy_area">
+        <span>
+          <img class="logo" src="/img/Logo.png" alt="">
+        </span>
+        <span>
+          <img class="logo2" src="img/footerPhrase.png" alt="">
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <div>
+    <!-- 다운하는 버튼 -->
+    <div id="arrow-up">
+      <div class="download_btn">소식 받아보기</div>
+    </div>
+    <!-- 팝업창 -->
+    <div id="pop-up">
+      <div class="close">
+        <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
+      </div>
+      <div>
+        <img class="img-pop-up_logo" src="/img/Logo.png" alt="">
+      </div>
+      <div>
+        <img class="img-pop-up_logo2" src="/img/footerPhrase.png" alt="">
+      </div>
+      <div class="pop-up_txt">
+        세차장 예약 어플
+        <div>
+          <div class="Pop-up_btn-group">
+            <button type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">지금 사전예약하러 가기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

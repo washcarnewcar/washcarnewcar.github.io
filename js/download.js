@@ -74,10 +74,12 @@ Btn_PopUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
   popUp.classList.add('close');
 });
+
 // btnClose 버튼 스크롤 될 때 생성
 const btnClose = document.querySelector('#btn-close');
 btnClose.addEventListener('click', () => {
   popUp.classList.add('close');
+  arrowUp.classList.add('visible2');
 });
 
 //스무스하게 스크롤을 하게 하고 / 스크롤을 하기 위해선 필요한 존재
