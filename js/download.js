@@ -55,7 +55,14 @@ btnOwner.addEventListener('click', () => {
     ) {
       arrowUp.classList.add('visible');
       popUp.classList.add('visible');
-    } else if (window.scrollY > tellHeight) {
+    }
+    //  else if (
+    //   window.scrollY > tabContentHeight / 2 &&
+    //   window.scrollY < homeHeight / 2 + 8750
+    // ) {
+    //   popUp.classList.add('visible');
+    // }
+    else if (window.scrollY > tellHeight) {
       arrowUp.classList.remove('visible');
       popUp.classList.remove('visible');
     } else if (window.scrollY < tellHeight / 2) {
