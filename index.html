@@ -11,91 +11,12 @@
   <title>세차세차</title>
   <link rel="stylesheet" href="/index.css" />
   <script src="/js/download.js" defer></script>
-
-  <script>
-    // HTML 폼 요소 가져오기
-    var form = document.getElementById("myForm");
-    var input = document.getElementById("myInput");
-
-    // 폼 제출 이벤트 처리
-    form.addEventListener("submit", function (event) {
-      event.preventDefault(); // 폼 제출 기본 동작 막기
-
-      // API 호출
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-          if (this.status == 200) {
-            alert("저장되었습니다.");
-          } else {
-            alert("전송 실패");
-          }
-        }
-      };
-      xhttp.open("POST", "https://api.example.com/", true);
-      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      xhttp.send("data=" + encodeURIComponent(input.value));
-    });
-  </script>
-
 </head>
 
 <body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAHWwSFjSbQAX0rd9ozRureBWdJAAyPaHU",
-      authDomain: "washcarnewcar.firebaseapp.com",
-      projectId: "washcarnewcar",
-      storageBucket: "washcarnewcar.appspot.com",
-      messagingSenderId: "970966999013",
-      appId: "1:970966999013:web:b7dc087e68af7bc91a990c",
-      measurementId: "G-JB88FMTDR9"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-
-  <!-- <script src="https://apis.google.com/js/api.js" />
-
-  <script>
-    function saveData() {
-      var name = document.getElementById('name').value;
-      var data = [[name]];
-      gapi.client.sheets.spreadsheets.values
-        .append({
-          spreadsheetId: '1Fr0wQIG6soL2X_0U4G_kKb1Y43-FFRVNP9FZow0YZNs',
-          range: 'Sheet1!A1',
-          valueInputOption: 'USER_ENTERED',
-          resource: {
-            values: data,
-          },
-        })
-        .then(
-          function (response) {
-            console.log(response);
-            alert('Data saved successfully');
-          },
-          function (error) {
-            console.log('Error saving data: ' + error);
-            alert('Error saving data');
-          }
-        );
-    }
-  </script> -->
 
   <!-- navbar -->
   <header>
@@ -281,25 +202,12 @@
         </div>
         <div class="tell_box">
           <form id="myForm">
-            <!-- <label for="myInput">입력:</label> -->
             <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
             <button id="tel_btn" type="submit">제출하기</button>
           </form>
-          <!-- <form action="/examples/media/action_target.php" method="post" id="loginForm"> -->
-          <!-- <input class="tel_input" type="tel" placeholder="전화번호를 입력해주세요" /> -->
-          <!-- 이름 : <input type="text" name="st_name"><br>
-                학번 : <input type="text" name="stt_d"><br>
-                학과 : <input type="text" name="department"><br><br> -->
-          <!-- </form> -->
-          <!-- <button id="tel_btn" type="submit" form="loginForm" class="btn btn-outline-light">제출하기</button> -->
-          <!-- <button onclick="saveDataToSheet()">Save Data to Google Sheets</button> -->
-          <!-- <button id="tel_btn" type="submit" form="loginForm" class="btn btn-dark">제출하기</button> -->
-          <!-- <button id="tel_btn" type="submit" form="loginForm">제출하기</button> -->
-          <!-- <input class="tel_btn" type="submit" value='제출하기'/> -->
+          <img class="last_Img" src="/img/lastImg.webp" alt="">
         </div>
-        <img class="last_Img" src="/img/lastImg.webp" alt="">
       </div>
-    </div>
   </section>
   </div>
 
