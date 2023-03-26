@@ -25,7 +25,7 @@ const tellHeight = tell.getBoundingClientRect().height;
 const arrowUp = document.querySelector('#arrow-up');
 document.addEventListener('scroll', () => {
   if (
-    window.scrollY > homeHeight / 2 &&
+    window.scrollY > homeHeight / 2 + 100 &&
     window.scrollY < homeHeight / 2 + 2290
   ) {
     arrowUp.classList.add('visible');
@@ -45,7 +45,7 @@ const btnGuest = document.querySelector('#home-tab');
 btnGuest.addEventListener('click', () => {
   document.addEventListener('scroll', () => {
     if (
-      window.scrollY > homeHeight / 2 + 500 &&
+      window.scrollY > homeHeight / 2 + 600 &&
       window.scrollY < homeHeight / 2 + 2290
     ) {
       arrowUp.classList.add('visible');
@@ -72,7 +72,7 @@ const btnOwner = document.querySelector('#profile-tab');
 btnOwner.addEventListener('click', () => {
   document.addEventListener('scroll', () => {
     if (
-      window.scrollY > homeHeight / 2 + 500 &&
+      window.scrollY > homeHeight / 2 + 600 &&
       window.scrollY < homeHeight / 2 + 3750
     ) {
       arrowUp.classList.add('visible');
@@ -101,7 +101,7 @@ const popUp = document.querySelector('#pop-up');
 document.addEventListener('scroll', () => {
   console.log(window.scrollY);
   if (
-    window.scrollY > tabContentHeight / 2 &&
+    window.scrollY > tabContentHeight / 2 + 100 &&
     window.scrollY < homeHeight / 2 + 2290
   ) {
     popUp.classList.add('visible');
@@ -118,7 +118,7 @@ Btn_PopUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
   popUp.classList.add('close');
   if (
-    window.scrollY > homeHeight / 2 &&
+    window.scrollY > homeHeight / 2 + 100 &&
     window.scrollY < homeHeight / 2 + 2290
   ) {
     arrowUp.classList.add('visible');
@@ -136,7 +136,7 @@ btnClose.addEventListener('click', () => {
   // arrowUp.classList.remove('visible');
   // arrowUp.classList.add('visible2');
   if (
-    window.scrollY > homeHeight / 2 &&
+    window.scrollY > homeHeight / 2 + 100 &&
     window.scrollY < homeHeight / 2 + 2290
   ) {
     arrowUp.classList.add('visible');
@@ -158,21 +158,21 @@ function scrollIntoView(selector) {
 }
 
 //전화번호 데이터 파이어베이스에 저장하는 코드
-const form = document.getElementById('myForm');
-form.addEventListener('submit', function (event) {
+const formGuest = document.getElementById('myFormGuest');
+formGuest.addEventListener('submit', function (event) {
   event.preventDefault();
-  const formData = new FormData(form);
+  const formGuestData = new FormData(formGuest);
   const toDay = new Date();
   const timeStamp = toDay.toLocaleString();
-  formData.append('timeStamp', timeStamp);
+  formGuestData.append('timeStamp', timeStamp);
 
-  const data = JSON.stringify(Object.fromEntries(formData));
+  const data = JSON.stringify(Object.fromEntries(formGuestData));
   // data.timestamp = timestamp;
   const myHeaders = new Headers();
   myHeaders.append('Content-Type', 'application/json');
 
   fetch(
-    'https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/landing.json',
+    'https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/Guest/landing.json',
     {
       headers: myHeaders,
       method: 'POST',
@@ -186,26 +186,32 @@ form.addEventListener('submit', function (event) {
     })
     .catch((error) => console.log('error', error));
 });
-// form.onsubmit = function (event) {
-//   var data = JSON.stringify(Object.fromEntries(formData));
-//   var myHeaders = new Headers();
-//   myHeaders.append('Content-Type', 'application/json');
+//전화번호 데이터 파이어베이스에 저장하는 코드
+const formOwner = document.getElementById('myFormOwner');
+formOwner.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const formOwnerData = new FormData(formOwner);
+  const toDay = new Date();
+  const timeStamp = toDay.toLocaleString();
+  formOwnerData.append('timeStamp', timeStamp);
 
-//   var xhr = new XMLHttpRequest();
-//   xhr.withCredentials = true;
+  const data = JSON.stringify(Object.fromEntries(formOwnerData));
+  // data.timestamp = timestamp;
+  const myHeaders = new Headers();
+  myHeaders.append('Content-Type', 'application/json');
 
-//   xhr.addEventListener('readystatechange', function () {
-//     if (this.readyState === 4) {
-//       console.log(this.responseText);
-//     }
-//   });
-
-//   xhr.open(
-//     'POST',
-//     'https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/landing.json'
-//   );
-
-//   xhr.setRequestHeader('Content-Type', 'application/json');
-//   console.log(data);
-//   xhr.send(data);
-// };
+  fetch(
+    'https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/Owner/landing.json',
+    {
+      headers: myHeaders,
+      method: 'POST',
+      body: data,
+    }
+  )
+    .then((response) => response.text())
+    .then((result) => {
+      console.log(result);
+      alert('성공적으로 제출되었습니다');
+    })
+    .catch((error) => console.log('error', error));
+});
