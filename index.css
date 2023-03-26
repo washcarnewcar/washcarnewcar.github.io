@@ -157,7 +157,7 @@ header {
 }
 
 #home-tab-pane {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 #profile-tab-pane {
   padding-top: 50px;
@@ -595,11 +595,11 @@ footer {
   pointer-events: auto;
   z-index: 1;
 }
-#arrow-up.visible2 {
+/* #arrow-up.visible2 {
   opacity: 1;
   pointer-events: auto;
   z-index: 2;
-}
+} */
 
 .download_btn {
   text-decoration: none;

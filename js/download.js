@@ -40,17 +40,39 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#receivingNews');
 });
 
-// btnGuest 버튼 클릭했을 때 home으로 올라가기
+//손님님이신가요? 클릭 시 pop-up, arrow-up 존재
 const btnGuest = document.querySelector('#home-tab');
 btnGuest.addEventListener('click', () => {
-  scrollIntoView('#home-tab-pane');
+  document.addEventListener('scroll', () => {
+    if (
+      window.scrollY > homeHeight / 2 + 500 &&
+      window.scrollY < homeHeight / 2 + 2290
+    ) {
+      arrowUp.classList.add('visible');
+      popUp.classList.add('visible');
+    }
+    //  else if (
+    //   window.scrollY > tabContentHeight / 2 &&
+    //   window.scrollY < homeHeight / 2 + 8750
+    // ) {
+    //   popUp.classList.add('visible');
+    // }
+    else if (window.scrollY > tellHeight) {
+      arrowUp.classList.remove('visible');
+      popUp.classList.remove('visible');
+    } else if (window.scrollY < tellHeight / 2) {
+      arrowUp.classList.remove('visible');
+      popUp.classList.remove('visible');
+    }
+  });
 });
+
 //사장님이신가요? 클릭 시 pop-up, arrow-up 존재
 const btnOwner = document.querySelector('#profile-tab');
 btnOwner.addEventListener('click', () => {
   document.addEventListener('scroll', () => {
     if (
-      window.scrollY > homeHeight / 2 &&
+      window.scrollY > homeHeight / 2 + 500 &&
       window.scrollY < homeHeight / 2 + 3750
     ) {
       arrowUp.classList.add('visible');
