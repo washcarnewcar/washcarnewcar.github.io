@@ -38,9 +38,10 @@
       <div class="cont_wrap">
         <div class="txt_wrap">
           <img class="phrase" src="/img/firstPhrase.png" alt="">
-          <div id="btn-News">
-            <div class="receivingNews_btn">출시 소식 받아보기</div>
-          </div>
+          <a href="#receivingNews" id="btn-News" class="btn btn-primary">
+            출시 소식 받아보기
+          </a>
+          <!-- <button id="btn-News" type="button" class="btn btn-primary">출시 소식 받아보기</button> -->
           <div class="cellphone">
             <img class="cellphone_img" src="/img/firstContent.webp" alt="">
           </div>
@@ -108,7 +109,7 @@
         </div>
 
         <!-- 전화번호 받는 부분 -->
-        <section id="receivingNews" class="phone_numbr">
+        <section id="receivingNews" class="phone_number">
           <div class="tell">
             <div class="cont_tell">
               <div class="tell_txt">이 서비스 궁금하신가요?</div>
@@ -210,7 +211,7 @@
         </div>
 
         <!-- 전화번호 받는 부분 -->
-        <section id="receivingNews" class="phone_numbr">
+        <section id="receivingNewsOwner" class="phone_number">
           <div class="tell">
             <div class="cont_tell">
               <div class="tell_txt">이 서비스 궁금하신가요?</div>
@@ -250,9 +251,21 @@
 
   <div>
     <!-- 다운하는 버튼 -->
-    <div id="arrow-up">
+    <!-- <div id="arrow-up">
       <div class="download_btn">소식 받아보기</div>
-    </div>
+    </div> -->
+    <a href="#receivingNews" id="arrow-up">
+      <div class="download_btn">소식 받아보기</div>
+    </a>
+
+    <!-- 다운하는 버튼 -->
+    <!-- <div id="arrow-up-owner">
+      <div class="download_btnOwner">소식 받아보기</div>
+    </div> -->
+    <!-- <a href="#receivingNewsOwner" id="arrow-up-owner">
+      <div class="download_btn">소식 받아보기</div>
+    </a> -->
+
     <!-- 팝업창 -->
     <div id="pop-up">
       <div class="close">
@@ -268,8 +281,12 @@
         세차장 예약 어플
         <div>
           <div class="Pop-up_btn-group">
-            <button type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">지금 사전예약하러 가기</button>
+            <!-- <button type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">지금 사전예약하러 가기</button> -->
+            <a href="#receivingNews" type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">
+              지금 사전예약하러 가기
+            </a>
           </div>
+
         </div>
       </div>
     </div>

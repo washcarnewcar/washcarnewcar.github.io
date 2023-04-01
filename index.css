@@ -72,10 +72,30 @@ header {
   width: 230px;
   height: 137.1819px;
 }
-#btn-News {
+/* #btn-News {
   padding-top: 35px;
+} */
+#btn-News {
+  display: block;
+  margin: auto;
+  width: 170px;
+  height: 30px;
+
+  background: #212529;
+  border-radius: 12px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-top: 11px;
 }
-.receivingNews_btn {
+
+.btn-primary {
   border: none;
   font-size: 15px;
   text-decoration: none;
@@ -378,7 +398,6 @@ header {
   max-width: 639x;
   height: 429px;
   margin: 0 auto;
-  background-color: #2e7acc;
   position: relative;
 }
 .tell_txt {
@@ -412,6 +431,7 @@ header {
   /* margin: 0 auto; */
 }
 #tel_btn {
+  border: #212529;
   display: block;
   margin: auto;
   width: 90px;
