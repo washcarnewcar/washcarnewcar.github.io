@@ -39,10 +39,10 @@
       <div class="cont_wrap">
         <div class="txt_wrap">
           <img class="phrase" src="/img/firstPhrase.png" alt="">
-          <a href="#receivingNews" id="btn-News" class="btn btn-primary">
-            출시 소식 받아보기
-          </a>
-          <!-- <button id="btn-News" type="button" class="btn btn-primary">출시 소식 받아보기</button> -->
+          <!-- <a href="#receivingNews" id="btn-News" class="btn btn-primary"> -->
+          <!-- 출시 소식 받아보기 -->
+          <!-- </a> -->
+          <button id="btn-News" type="button" class="btn btn-primary">출시 소식 받아보기</button>
           <div class="cellphone">
             <img class="cellphone_img" src="/img/firstContent.webp" alt="">
           </div>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- 중간설명 -->
-    <section class="comment">
+    <section class="comment" id="comment">
       <div class="comment_txt">
         내 주변 모든 세차장 비교 한 곳에서 하세요
         <br />쉽고 빠르게 바로 예약하세요
@@ -60,24 +60,20 @@
     </section>
 
     <!-- 주요 서비스 설명 -->
-    <div class="tab" id="tab">
-      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
-            onclick="location.href='#home-tab-pane'">
-            손님이신가요?
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"
-            onclick="location.href='#profile-tab-pane'">
-            사장님이신가요?
-          </button>
-        </li>
-      </ul>
-    </div>
+    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true" onclick="location.href='#home-tab-pane'">
+          손님이신가요?
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false" onclick="location.href='#profile-tab-pane'">
+          사장님이신가요?
+        </button>
+      </li>
+    </ul>
 
     <div class="tab-content" id="myTabContent">
       <!-- 손님 -->
@@ -108,38 +104,18 @@
           </div>
           <img class="tab_content_img" src="/img/guest_content4-Img.webp" alt="">
         </div>
-
-        <!-- 전화번호 받는 부분 -->
-        <section id="receivingNews" class="phone_number">
-          <div class="tell">
-            <div class="cont_tell">
-              <div class="tell_txt">이 서비스 궁금하신가요?</div>
-              <div class="tell_txt2">
-                서비스 출시가 되면 소식을 받아볼 수 있습니다
-              </div>
-              <div class="tell_box">
-                <form id="myFormGuest">
-                  <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
-                  <button id="tel_btn" type="submit">제출하기</button>
-                </form>
-                <img class="last_Img" src="/img/lastImg.webp" alt="">
-              </div>
-            </div>
-          </div>
-        </section>
-
       </div>
 
       <!-- 사장 -->
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="tab_content_s">
           <div class="tab_content_phrase">
-            세차새차와 함께
-            <br />매출을 늘리고
-            <br />비용은 줄이고
+            매출은 높게
+            <br />비용은 <span class="little">낮게</span>
+            <br />부담은 <span class="low">적게</span>
           </div>
-          <img class="tab_content_img" src="/img/owner_content1-img.png" alt="">
         </div>
+        <img class="tab_content_img" src="/img/owner_content1-img.png" alt="">
         <div class="tab_content_g">
           <div class="tab_content_phrase">
             세차새차에서<br /> 더 많은 손님과 만나세요
@@ -209,31 +185,30 @@
             </div>
           </div>
         </div>
-
-        <!-- 전화번호 받는 부분 -->
-        <section id="receivingNewsOwner" class="phone_number">
-          <div class="tell">
-            <div class="cont_tell">
-              <div class="tell_txt">이 서비스 궁금하신가요?</div>
-              <div class="tell_txt2">
-                서비스 출시가 되면 소식을 받아볼 수 있습니다
-              </div>
-              <div class="tell_box">
-                <form id="myFormOwner">
-                  <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
-                  <button id="tel_btn" type="submit">제출하기</button>
-                </form>
-                <img class="last_Img" src="/img/lastImg.webp" alt="">
-              </div>
-            </div>
-          </div>
-        </section>
-
       </div>
     </div>
   </div>
 
+  <!-- 전화번호 받는 부분 -->
+  <section id="receivingNews" class="phone_number">
+    <div class="tell">
+      <div class="cont_tell">
+        <div class="tell_txt">이 서비스 궁금하신가요?</div>
+        <div class="tell_txt2">
+          서비스 출시가 되면 소식을 받아볼 수 있습니다
+        </div>
+        <div class="tell_box">
+          <form id="myFormGuest">
+            <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
+            <button id="tel_btn" type="submit">제출하기</button>
+          </form>
+          <img class="last_Img" src="/img/lastImg.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
+  </div>
 
 
   <footer>
@@ -254,9 +229,12 @@
     <!-- <div id="arrow-up">
       <div class="download_btn">소식 받아보기</div>
     </div> -->
-    <a href="#receivingNews" id="arrow-up">
+    <button id="arrow-up">
       <div class="download_btn">소식 받아보기</div>
-    </a>
+    </button>
+    <!-- <a href="#receivingNews" id="arrow-up">
+      <div class="download_btn">소식 받아보기</div>
+    </a> -->
 
     <!-- 다운하는 버튼 -->
     <!-- <div id="arrow-up-owner">
@@ -281,10 +259,10 @@
         세차장 예약 어플
         <div>
           <div class="Pop-up_btn-group">
-            <!-- <button type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">지금 사전예약하러 가기</button> -->
-            <a href="#receivingNews" type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">
-              지금 사전예약하러 가기
-            </a>
+            <button type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark">지금 사전예약하러 가기</button>
+            <!-- <a href="#receivingNews" type="Pop-up_btn" id="btn-pop-up" class="btn btn-dark"> -->
+            <!-- 지금 사전예약하러 가기 -->
+            <!-- </a> -->
           </div>
 
         </div>

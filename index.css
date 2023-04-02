@@ -15,13 +15,13 @@ header {
   right: 0;
 
   height: 40px;
-  padding: 1rem;
+  padding-left: 1rem;
   background: white;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header-img {
@@ -62,7 +62,7 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 25px;
   text-align: center;
 
   color: #ffffff;
@@ -102,20 +102,12 @@ header {
   font-size: 16px;
   text-align: center;
   font-weight: bold;
-  letter-spacing: -2px;
 }
 
 /* 주요서비스 */
-.tab {
+#myTab {
   position: sticky;
-  top: 39.5px;
-
-  padding-top: 5px;
-  height: 23.6533px;
-  background: white;
-  text-align: center;
-
-  z-index: 2;
+  top: 40px;
 }
 .nav-link {
   background-color: #ffffff;
@@ -166,10 +158,15 @@ header {
   font-size: 28px;
   font-weight: bold;
   color: black;
-  letter-spacing: -3px;
   text-align: left;
   max-width: 639px;
   margin: 0 auto;
+}
+.little {
+  color: #8b95a1;
+}
+.low {
+  color: #d1d6db;
 }
 .tab_content_phrase3 {
   padding-left: 27px;
@@ -430,9 +427,10 @@ footer {
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  transition: opacity 300ms ease-in;
+  transition: opacity 300ms;
   color: black;
   opacity: 0;
+  pointer-events: none;
 
   background-color: #63a2ff;
   width: 100%;
@@ -447,7 +445,7 @@ footer {
 }
 #pop-up.close {
   opacity: 0;
-  pointer-events: auto;
+  pointer-events: none;
   z-index: 0;
 }
 .img-pop-up_logo {
