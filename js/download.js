@@ -237,6 +237,7 @@ document.addEventListener('scroll', () => {
 const Btn_PopUp = document.querySelector('#btn-pop-up');
 Btn_PopUp.addEventListener('click', () => {
   scrollToIdDownHeaderAndTab('#receivingNews');
+  popUp.classList.add('close');
 });
 // Btn_PopUp.addEventListener('click', () => {
 //   scrollToIdDownHeaderAndTab('#receivingNews');

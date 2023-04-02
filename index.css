@@ -399,8 +399,8 @@ footer {
 .footer {
   max-width: 639px;
   margin: 0 auto;
-  /* height: 177px; */
-  height: 500px;
+  height: 177px;
+  /* height: 500px; */
 }
 .copy_area {
   display: flex;
