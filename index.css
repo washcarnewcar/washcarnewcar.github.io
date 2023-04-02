@@ -1,7 +1,6 @@
 body {
   padding-top: 0px;
   height: 100%;
-  /* overflow: hidden; */
   font-style: normal;
   font-size: 16px;
   margin: 0;
@@ -9,21 +8,13 @@ body {
   width: 100%;
 }
 
-/* navbar */
-/* .header {
-    height: 65px;
-    max-width: 639x;
-    padding-left: 20px;
-  } */
 header {
-  /* position: fixed; */
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
 
   height: 40px;
-  /* max-width: 639x; */
   padding: 1rem;
   background: white;
   font-weight: bold;
@@ -39,24 +30,9 @@ header {
 
 /* 첫화면 */
 .main_visual {
-  /* height: 100vh;
-    width: 100vw; */
-  /* margin-left: -15px;
-    background: url(img1/firstBackground.png) center bottom;
-    background-repeat: no-repeat;
-    background-size: cover; */
   background: linear-gradient(to top, #ffffff, #9ec0f4);
-  /* background-size: 100% 100%; */
-  /* margin-top: 40px; */
 }
-/* .main_visual .cont_wrap {
-    padding-bottom: 435px;
-    background: linear-gradient(to top, #ffffff, #9ec0f4);
-    background: url(/img1/firstContent.png) no-repeat center bottom;
-    background-size: 332px 356px;
-  } */
 .cont_wrap {
-  /* padding-left: 37px; */
   padding-top: 30px;
   display: flex;
   background-size: 100% 100%;
@@ -71,10 +47,8 @@ header {
 .phrase {
   width: 230px;
   height: 137.1819px;
+  line-height: 20px;
 }
-/* #btn-News {
-  padding-top: 35px;
-} */
 #btn-News {
   display: block;
   margin: auto;
@@ -108,6 +82,7 @@ header {
   height: 30px;
   display: block;
   margin: auto;
+  line-height: 25px;
 }
 .cellphone {
   padding-top: 35px;
@@ -137,14 +112,8 @@ header {
 
   padding-top: 5px;
   height: 23.6533px;
-  /* max-width: 639x; */
   background: white;
-  /* font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
   text-align: center;
-  /* padding-top: 5px; */
 
   z-index: 2;
 }
@@ -185,18 +154,14 @@ header {
 
 .tab-content {
   background-color: #ffffff;
-  /* margin-top: 100px; */
 }
 .tab-content_s {
   padding-bottom: 25.18px;
 }
 .tab_content_phrase {
-  /* height: 76px; */
-  /* padding: 45px 0px 55px 27px; */
   padding-left: 27px;
   padding-top: 45px;
   padding-bottom: 55px;
-  /* width: 130px; */
 
   font-size: 28px;
   font-weight: bold;
@@ -206,17 +171,10 @@ header {
   max-width: 639px;
   margin: 0 auto;
 }
-/* .tab_content_phrase-img {
-    height: 70px;
-    width: 298px;
-  } */
 .tab_content_phrase3 {
-  /* height: 76px; */
-  /* padding: 45px 0px 55px 27px; */
   padding-left: 27px;
   padding-top: 45px;
   padding-bottom: 55px;
-  /* width: 130px; */
 }
 .tab_content_phrase3-img {
   height: 114px;
@@ -244,7 +202,6 @@ header {
   );
   padding-bottom: 25.18px;
   height: 605px;
-  /* border: solid #000000; */
 }
 /* .img1 {
     position: absolute;
@@ -260,7 +217,6 @@ header {
     margin-top: 39px;
   } */
 .tab_content_img {
-  /* padding-top: 23.6533px; */
   margin-top: 23.6533px;
   width: 300px;
   height: 415px;
@@ -282,7 +238,6 @@ header {
 
 /* 좋은 주요 서비스 어필 */
 .benefit {
-  /* background: linear-gradient(to top, #9ec0f4, #ffffff 80%); */
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -298,15 +253,11 @@ header {
   );
 
   padding-bottom: 25.18px;
-  /* background-color: #f5f5f5; */
 }
 .benefit_phrase {
-  /* height: 76px; */
-  /* padding: 45px 0px 55px 27px; */
   padding-left: 27px;
   padding-top: 45px;
   padding-bottom: 43px;
-  /* width: 130px; */
 
   font-size: 28px;
   font-weight: bold;
@@ -318,9 +269,7 @@ header {
 }
 .like {
   max-width: 639px;
-  /* height: 1000px; */
   margin: 0 auto;
-  /* background-color: #f5f5f5; */
 }
 
 .like_acc_tile {
@@ -331,20 +280,6 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin-bottom: 43px;
-
-  /* width: 265px;
-  height: 355px;
-  left: 47px;
-
-  display: block;
-  margin: 0px auto 43px auto; */
-
-  /* top: 24px; */
-
-  /* background: #ffffff;
-  border: 0.25px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px; */
 }
 .like_icon1 {
   width: 139px;
@@ -416,8 +351,6 @@ header {
   letter-spacing: -2px;
 }
 .tell_box {
-  /* display: block; */
-  /* margin-top: 37px; */
   margin-top: 11.88px;
 }
 .tel_input {
@@ -428,7 +361,6 @@ header {
   color: #1a1f27;
   width: 222px;
   height: 24px;
-  /* margin: 0 auto; */
 }
 #tel_btn {
   border: #212529;
@@ -451,11 +383,7 @@ header {
   margin-top: 11px;
 }
 .last_Img {
-  /* display: block; */
-  /* margin: 0 auto; */
   float: right;
-  /* margin-left: 13.114px; */
-  /* padding-left: 13.114px; */
   position: absolute;
   bottom: 0;
   right: 0;
@@ -468,7 +396,6 @@ header {
 footer {
   overflow: hidden;
   font-size: 12px;
-  /* padding: 40px 20px 50px; */
   background-color: #1a1f27;
   margin: auto;
 }
@@ -476,7 +403,7 @@ footer {
   max-width: 639px;
   margin: 0 auto;
   /* height: 177px; */
-  height: 200px;
+  height: 500px;
 }
 .copy_area {
   display: flex;
@@ -495,16 +422,10 @@ footer {
 
 /* 팝업창 */
 #pop-up {
-  /* position: sticky;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  /* transform: perspective(); */
   border: none;
   text-decoration: none;
   font-weight: bold;
@@ -562,6 +483,7 @@ footer {
   border-radius: 30px;
   font-size: 13px;
   margin-top: 25px;
+  line-height: 25px;
 }
 
 /* 소식 받아보기 */
@@ -571,7 +493,6 @@ footer {
   right: 0;
   bottom: 0;
   margin: 0;
-  /* transform: perspective(); */
   border: none;
   background-color: #9db8ff;
   text-decoration: none;
@@ -583,31 +504,6 @@ footer {
   color: black;
 
   opacity: 0;
-
-  /* position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 4rem;
-    font-size: 50px;
-    opacity: 0;
-    pointer-events: none;
-    color: black;
-    background-color: #9db8ff;
-    transition: opacity 300ms ease-in; */
-
-  /* padding: 5px 84.5px; */
-  /* right: 16px; */
-  /* bottom: 16px; */
-  /* float: bottom; */
-  /* 
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
-    right: 16px;
-    bottom: 16px;
-    transform: perspective(); */
 }
 
 #arrow-up.visible {
@@ -615,11 +511,6 @@ footer {
   pointer-events: auto;
   z-index: 1;
 }
-/* #arrow-up.visible2 {
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 2;
-} */
 
 .download_btn {
   text-decoration: none;

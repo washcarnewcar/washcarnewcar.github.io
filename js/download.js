@@ -96,10 +96,11 @@ btnGuest.addEventListener('click', () => {
   arrowUp.addEventListener('click', () => {
     scrollIntoView('#receivingNews');
   });
+
   // Btn_PopUp 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
   const Btn_PopUp = document.querySelector('#btn-pop-up');
   Btn_PopUp.addEventListener('click', () => {
-    scrollIntoView('#receivingNew');
+    scrollIntoView('#receivingNews');
     popUp.classList.add('close');
     if (
       window.scrollY > homeHeight / 2 + 100 &&
