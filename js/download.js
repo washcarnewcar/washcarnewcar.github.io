@@ -309,7 +309,8 @@ formGuest.addEventListener('submit', function (event) {
 
   fetch(
     //'/'을 기점으로 테이블이 만들어짐
-    `https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/${who}/landing.json`,
+    // `https://verdant-cable-380008-default-rtdb.asia-southeast1.firebasedatabase.app/${who}/landing.json`,
+    `https://washcarnewcar-default-rtdb.firebaseio.com/${who}/landing.json`,
     {
       headers: myHeaders,
       method: 'POST',
