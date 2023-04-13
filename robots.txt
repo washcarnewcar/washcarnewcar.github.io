@@ -1,2 +1,3 @@
 User-agent: *
 Allow:/
+Sitemap: https://landing.washcar.me/sitemap.xml
