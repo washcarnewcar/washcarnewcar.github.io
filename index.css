@@ -58,12 +58,12 @@ header {
   background: #212529;
   border-radius: 12px;
 
-  font-family: 'Noto Sans';
+  /* font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
+  text-align: center; */
 
   color: #ffffff;
   margin-top: 11px;
@@ -223,8 +223,8 @@ header {
 }
 .tab_content_img_arrow {
   margin-top: 23.6533px;
-  width: 340px;
-  height: 280px;
+  width: 350px;
+  height: 415px;
   padding-bottom: 25.18px;
   display: block;
   margin: auto;
@@ -500,14 +500,13 @@ footer {
   bottom: 0;
   margin: 0;
   border: none;
-  background-color: #9db8ff;
+  background-color: #2e7acc;
   text-decoration: none;
   font-weight: bold;
   width: 100%;
   height: 50px;
   text-align: center;
   transition: opacity 300ms ease-in;
-  color: black;
 
   opacity: 0;
 }
@@ -522,7 +521,7 @@ footer {
   text-decoration: none;
   font-size: 25px;
   line-height: 50px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .footer .copy_area span {

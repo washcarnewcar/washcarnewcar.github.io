@@ -39,60 +39,6 @@ arrowUp.addEventListener('click', () => {
 const btnGuest = document.querySelector('#home-tab');
 btnGuest.addEventListener('click', () => {
   scrollToIdDownHeaderAndTab('#home-tab-pane');
-
-  // document.addEventListener('scroll', () => {
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 600 &&
-  //     window.scrollY < homeHeight / 2 + 2290
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //     popUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //     popUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //     popUp.classList.remove('visible');
-  //   }
-  // });
-  // 맨 위에 버튼 클릭했을 때 전화번호 입력 부분으로ß 내려가기
-  // const receivingNews = document.querySelector('#btn-News');
-  // receivingNews.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNews');
-  // });
-  // document.addEventListener('scroll', () => {
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 100 &&
-  //     window.scrollY < homeHeight / 2 + 2290
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //   }
-  // });
-  // arrow up 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-  // arrowUp.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNews');
-  // });
-
-  // Btn_PopUp 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-  // const Btn_PopUp = document.querySelector('#btn-pop-up');
-  // Btn_PopUp.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNews');
-  //   popUp.classList.add('close');
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 100 &&
-  //     window.scrollY < homeHeight / 2 + 2290
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //   }
-  // });
 });
 
 // arrow up 버튼 스크롤 될 때 생성
@@ -102,59 +48,6 @@ const arrowUpOwner = document.querySelector('#arrow-up-owner');
 const btnOwner = document.querySelector('#profile-tab');
 btnOwner.addEventListener('click', () => {
   scrollToIdDownHeaderAndTab('#profile-tab-pane');
-
-  // document.addEventListener('scroll', () => {
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 600 &&
-  //     window.scrollY < homeHeight / 2 + 3750
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //     popUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //     popUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //     popUp.classList.remove('visible');
-  //   }
-  // });
-  // 맨 위에 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-  // const receivingNews = document.querySelector('#btn-News');
-  // receivingNews.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNewsOwner');
-  // });
-  // document.addEventListener('scroll', () => {
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 100 &&
-  //     window.scrollY < homeHeight / 2 + 2290
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //   }
-  // });
-  // arrow up 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-  // arrowUp.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNewsOwner');
-  // });
-  // Btn_PopUp 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-  // const Btn_PopUp = document.querySelector('#btn-pop-up');
-  // Btn_PopUp.addEventListener('click', () => {
-  //   scrollIntoView('#receivingNewsOwner');
-  //   popUp.classList.add('close');
-  //   if (
-  //     window.scrollY > homeHeight / 2 + 100 &&
-  //     window.scrollY < homeHeight / 2 + 2290
-  //   ) {
-  //     arrowUp.classList.add('visible');
-  //   } else if (window.scrollY > tellHeight) {
-  //     arrowUp.classList.remove('visible');
-  //   } else if (window.scrollY < tellHeight / 2) {
-  //     arrowUp.classList.remove('visible');
-  //   }
-  // });
 });
 
 const popUp = document.querySelector('#pop-up');
@@ -216,22 +109,6 @@ document.addEventListener('scroll', () => {
     }
   }
 });
-
-// pop-up 버튼 스크롤 될 때 생성
-// const tabContent = document.querySelector('#myTabContent');
-// const tabContentHeight = tabContent.offsetHeight;
-// document.addEventListener('scroll', () => {
-//   if (
-//     window.scrollY > tabContentHeight / 2 + 100 &&
-//     window.scrollY < homeHeight / 2 + 2290
-//   ) {
-//     popUp.classList.add('visible');
-//   } else if (window.scrollY > tellHeight) {
-//     popUp.classList.remove('visible');
-//   } else if (window.scrollY < tabContentHeight / 2) {
-//     popUp.classList.remove('visible');
-//   }
-// });
 
 // Btn_PopUp 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
 const Btn_PopUp = document.querySelector('#btn-pop-up');
