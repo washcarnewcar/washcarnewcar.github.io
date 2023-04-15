@@ -221,6 +221,14 @@ header {
   display: block;
   margin: auto;
 }
+.tab_content_img_arrow {
+  margin-top: 23.6533px;
+  width: 340px;
+  height: 280px;
+  padding-bottom: 25.18px;
+  display: block;
+  margin: auto;
+}
 .tab_content_img-one {
   margin-top: 23.6533px;
   width: 200px;
