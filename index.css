@@ -150,9 +150,21 @@ header {
 .tab-content_s {
   padding-bottom: 25.18px;
 }
+.tab_content {
+  padding-left: 27px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+
+  font-size: 38px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  max-width: 639px;
+  margin: 0 auto;
+}
 .tab_content_phrase {
   padding-left: 27px;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 55px;
 
   font-size: 28px;
