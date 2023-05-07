@@ -155,7 +155,7 @@ header {
   padding-top: 15px;
   padding-bottom: 60px;
 
-  font-size: 38px;
+  font-size: 35px;
   font-weight: bold;
   color: black;
   text-align: left;
@@ -435,6 +435,24 @@ footer {
   width: 60px;
   height: 14.1726px;
   margin-left: 8px;
+}
+#footer_url {
+  margin-top: 10px;
+  margin-left: 48px;
+  font-weight: 700;
+}
+.footer_url:link {
+  color: #b7b7b7;
+  text-decoration: none;
+}
+.footer_content {
+  color: #b7b7b7;
+  margin-top: 10px;
+  margin-left: 48px;
+  font-weight: 700;
+}
+.content_small {
+  font-weight: 100;
 }
 
 /* 팝업창 */
