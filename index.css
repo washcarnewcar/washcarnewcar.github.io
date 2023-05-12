@@ -82,7 +82,7 @@ header {
   height: 30px;
   display: block;
   margin: auto;
-  line-height: 25px;
+  line-height: 15px;
 }
 .cellphone {
   padding-top: 35px;
@@ -380,6 +380,35 @@ header {
   height: 24px;
 }
 #tel_btn {
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  width: 244px;
+  height: 39px;
+
+  padding: 9px 0px 0px 40px;
+
+  background: #fddc3f;
+  border-radius: 10px;
+}
+#tel_btn > i {
+  margin-top: 3px;
+}
+
+.tel_btnTxt {
+  margin-top: 0;
+  margin-left: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #3a2929;
+}
+#tel_btn2 {
   border: #212529;
   display: block;
   margin: auto;
