@@ -30,7 +30,20 @@ header {
 
 /* 첫화면 */
 .main_visual {
-  background: linear-gradient(to top, #ffffff, #9ec0f4);
+  /* background: linear-gradient(to top, #ffffff, #9ec0f4); */
+  background: linear-gradient(
+    0deg,
+    rgba(12, 101, 229, 0.4) 0%,
+    rgba(49, 124, 233, 0.49) 12%,
+    rgba(103, 158, 238, 0.63) 24%,
+    rgba(149, 188, 243, 0.74) 37%,
+    rgba(187, 212, 247, 0.83) 50%,
+    rgba(217, 230, 250, 0.91) 64%,
+    rgba(238, 244, 253, 0.96) 78%,
+    rgba(250, 252, 254, 0.99) 91%,
+    #ffffff 100%
+  );
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 .cont_wrap {
   padding-top: 30px;
@@ -48,25 +61,51 @@ header {
   width: 230px;
   height: 137.1819px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 #btn-News {
-  display: block;
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  width: 244px;
+  height: 39px;
+
+  padding: 9px 0px 0px 40px;
+
+  background: #fddc3f;
+  border-radius: 10px;
+
+  margin-top: 0;
+  margin-left: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #3a2929;
+
   margin: auto;
-  width: 170px;
-  height: 30px;
+  /* display: block;
+  margin: auto;
+  width: 240px;
+  height: 37px;
 
-  background: #212529;
-  border-radius: 12px;
+  background: #fddc3f;
+  border-radius: 5px;
 
-  /* font-family: 'Noto Sans';
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 25px;
-  text-align: center; */
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.15em;
 
-  color: #ffffff;
-  margin-top: 11px;
+  color: #3a2929;
+  margin-top: 11px; */
 }
 
 .btn-primary {
@@ -190,7 +229,7 @@ header {
   width: 306px;
 }
 .tab_content_g {
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #ffffff 0%,
     rgba(251, 252, 254, 0.99) 9%,
@@ -208,7 +247,7 @@ header {
     rgba(161, 195, 244, 0.4) 92%,
     rgba(245, 248, 253, 0.4) 99%,
     rgba(255, 255, 255, 0.4) 100%
-  );
+  ); */
   padding-bottom: 25.18px;
   height: 605px;
 }
@@ -255,8 +294,8 @@ header {
 
 /* 좋은 주요 서비스 어필 */
 .benefit {
-  background: linear-gradient(
-    180deg,
+  /* background: linear-gradient(
+    /* 180deg,
     #ffffff 0%,
     rgba(252, 253, 254, 0.99) 18%,
     rgba(242, 247, 253, 0.97) 31%,
@@ -267,9 +306,9 @@ header {
     rgba(98, 155, 238, 0.61) 84%,
     rgba(51, 125, 233, 0.5) 93%,
     rgba(12, 101, 229, 0.4) 100%
-  );
+  ); */
 
-  padding-bottom: 25.18px;
+  /* padding-bottom: 25.18px; */
 }
 .benefit_phrase {
   padding-left: 27px;
@@ -344,7 +383,7 @@ header {
 
 /* 전화번호 받는 부분 */
 .phone_number {
-  background-color: #2e7acc;
+  background-color: #000000;
 }
 .tell {
   max-width: 639x;
@@ -390,6 +429,20 @@ header {
 
   background: #fddc3f;
   border-radius: 10px;
+
+  margin-top: 0px;
+  margin-left: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #3a2929;
+
+  margin: auto;
 }
 #tel_btn > i {
   margin-top: 3px;
