@@ -75,8 +75,6 @@ header {
   background: #fddc3f;
   border-radius: 10px;
 
-  margin-top: 0;
-  margin-left: 10px;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 900;
@@ -86,43 +84,11 @@ header {
   letter-spacing: 0.1em;
 
   color: #3a2929;
-
-  margin: auto;
-  /* display: block;
-  margin: auto;
-  width: 240px;
-  height: 37px;
-
-  background: #fddc3f;
-  border-radius: 5px;
-
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.15em;
-
-  color: #3a2929;
-  margin-top: 11px; */
+}
+#btn-News > i {
+  margin-top: 3px;
 }
 
-.btn-primary {
-  border: none;
-  font-size: 15px;
-  text-decoration: none;
-  padding: 4px 15px;
-  color: white;
-  background-color: #3d84ed;
-  /* box-shadow: 1px 1px 1px 1px gray; */
-  border-radius: 15px;
-  width: 170px;
-  height: 30px;
-  display: block;
-  margin: auto;
-  line-height: 15px;
-}
 .cellphone {
   padding-top: 35px;
 }
@@ -449,7 +415,6 @@ header {
 }
 
 .tel_btnTxt {
-  margin-top: 0;
   margin-left: 10px;
   font-family: 'Noto Sans';
   font-style: normal;
@@ -602,6 +567,36 @@ footer {
   font-size: 13px;
   margin-top: 25px;
   line-height: 25px;
+}
+#Pop-up_btn {
+  border: none;
+  display: flex;
+  margin: 0 auto;
+  width: 250px;
+  height: 39px;
+
+  padding: 9px 0px 0px 40px;
+
+  background: #fddc3f;
+  border-radius: 10px;
+
+  margin-top: 0px;
+  margin-left: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #3a2929;
+
+  margin: auto;
+  margin-top: 10px;
+}
+#Pop-up_btn > i {
+  margin-top: 3px;
 }
 
 /* 소식 받아보기 */
