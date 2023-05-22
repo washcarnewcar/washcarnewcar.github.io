@@ -55,6 +55,10 @@ const myTabContent = document.querySelector('#myTabContent');
 const myTabContentHeight = myTabContent.offsetHeight;
 const comment = document.querySelector('#comment');
 const commentHeight = comment.offsetHeight;
+
+const content = document.querySelector('.tab-content');
+const contentHeight = content.offsetHeight;
+
 document.addEventListener('scroll', () => {
   console.log(window.scrollY);
   // 손님이신가요? 를 선택했을 때
@@ -69,7 +73,7 @@ document.addEventListener('scroll', () => {
         arrowUp.classList.add('visible');
       }
 
-      if (window.scrollY > homeHeight + commentHeight + 100) {
+      if (window.scrollY > contentHeight / 2 + 500) {
         if (!popUp.classList.contains('visible')) {
           popUp.classList.add('visible');
         }
@@ -94,7 +98,7 @@ document.addEventListener('scroll', () => {
       if (!arrowUp.classList.contains('visible')) {
         arrowUp.classList.add('visible');
       }
-      if (window.scrollY > homeHeight + commentHeight + 100) {
+      if (window.scrollY > contentHeight / 2 + 700) {
         if (!popUp.classList.contains('visible')) {
           popUp.classList.add('visible');
         }

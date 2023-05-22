@@ -104,9 +104,14 @@ header {
 }
 
 .comment_txt {
-  font-size: 16px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
-  font-weight: bold;
+
+  color: #000000;
 }
 
 /* 주요서비스 */
@@ -144,9 +149,11 @@ header {
 
 #home-tab-pane {
   padding-top: 50px;
+  background: #f1f7ff;
 }
 #profile-tab-pane {
   padding-top: 50px;
+  background: #f1f7ff;
 }
 
 .tab-content {
@@ -154,6 +161,7 @@ header {
 }
 .tab-content_s {
   padding-bottom: 25.18px;
+  background: #f1f7ff;
 }
 .tab_content {
   padding-left: 27px;
@@ -214,6 +222,7 @@ header {
     rgba(245, 248, 253, 0.4) 99%,
     rgba(255, 255, 255, 0.4) 100%
   ); */
+  background: #f1f7ff;
   padding-bottom: 25.18px;
   height: 605px;
 }
@@ -292,6 +301,7 @@ header {
 .like {
   max-width: 639px;
   margin: 0 auto;
+  height: 75rem;
 }
 
 .like_acc_tile {
@@ -420,6 +430,7 @@ header {
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
+  line-height: 20px;
 
   text-align: center;
   letter-spacing: 0.1em;
@@ -517,9 +528,9 @@ footer {
   opacity: 0;
   pointer-events: none;
 
-  background-color: #63a2ff;
+  background-color: #ffffff;
   width: 100%;
-  height: 301.23px;
+  height: 320px;
   margin: 0;
 }
 
@@ -534,8 +545,8 @@ footer {
   z-index: 0;
 }
 .img-pop-up_logo {
-  width: 65px;
-  height: 65px;
+  width: 95px;
+  height: 95px;
   margin: auto;
   display: block;
   margin-top: 10px;
@@ -553,12 +564,34 @@ footer {
   display: block;
   margin-top: 30.21px;
 }
-.pop-up_txt {
-  font-size: 26px;
-  /* font-weight: 550; */
-  color: white;
+.pop-up_txt1 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
   text-align: center;
+
+  color: #464646;
+
+  text-align: left;
   margin-top: 15px;
+  margin-left: 20px;
+}
+.pop-up_txt2 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #363636;
+
+  text-align: left;
+  margin-top: 8px;
+  margin-left: 20px;
 }
 .btn-dark {
   width: 300px;
@@ -568,20 +601,21 @@ footer {
   margin-top: 25px;
   line-height: 25px;
 }
-#Pop-up_btn {
+#btn-pop-up {
+  /* display: flex; */
+  /* margin: 0 auto; */
+  margin-top: 13px;
+
+  width: 360px;
+  height: 49px;
+
+  /* padding: 9px 0px 0px 40px; */
+
   border: none;
-  display: flex;
-  margin: 0 auto;
-  width: 250px;
-  height: 39px;
+  background: #0c65e5;
+  border-radius: 15px;
 
-  padding: 9px 0px 0px 40px;
-
-  background: #fddc3f;
-  border-radius: 10px;
-
-  margin-top: 0px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 900;
@@ -591,12 +625,26 @@ footer {
   letter-spacing: 0.1em;
 
   color: #3a2929;
-
-  margin: auto;
-  margin-top: 10px;
 }
-#Pop-up_btn > i {
+#btn-pop-up > i {
   margin-top: 3px;
+}
+.pop-up_coupon {
+  margin: auto;
+  /* margin-left: 10px; */
+  /* margin-top: -3px; */
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+
+  color: #ffffff;
 }
 
 /* 소식 받아보기 */
@@ -607,7 +655,7 @@ footer {
   bottom: 0;
   margin: 0;
   border: none;
-  background-color: #2e7acc;
+  background-color: #0c65e5;
   text-decoration: none;
   font-weight: bold;
   width: 100%;
@@ -625,9 +673,14 @@ footer {
 }
 
 .download_btn {
-  text-decoration: none;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
   font-size: 25px;
-  line-height: 50px;
+  line-height: 22px;
+  /* identical to box height, or 88% */
+
+  text-align: center;
   color: #ffffff;
 }
 
