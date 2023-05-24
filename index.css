@@ -577,7 +577,7 @@ footer {
   color: #464646;
 
   text-align: left;
-  margin-top: 15px;
+  margin-top: 19px;
   margin-left: 20px;
 }
 .pop-up_txt2 {
@@ -588,6 +588,20 @@ footer {
   line-height: 35px;
 
   color: #363636;
+
+  text-align: left;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.pop-up_txt3 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
 
   text-align: left;
   margin-top: 8px;
