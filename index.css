@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   margin: 0;
   background-color: white;
-  width: 100%;
+  /* width: 100%; */
 }
 
 header {
@@ -30,7 +30,6 @@ header {
 
 /* 첫화면 */
 .main_visual {
-  /* background: linear-gradient(to top, #ffffff, #9ec0f4); */
   background: linear-gradient(
     0deg,
     rgba(12, 101, 229, 0.4) 0%,
@@ -43,25 +42,20 @@ header {
     rgba(250, 252, 254, 0.99) 91%,
     #ffffff 100%
   );
-  /* transform: matrix(1, 0, 0, -1, 0, 0); */
-}
-.cont_wrap {
   padding-top: 30px;
-  display: flex;
+  display: block;
   background-size: 100% 100%;
   margin: 0 auto;
-}
-.txt_wrap {
   font-weight: bold;
-  display: block;
   text-align: center;
-  margin: 0 auto;
 }
+.cont_wrap {
+}
+
 .phrase {
-  width: 230px;
-  height: 137.1819px;
-  line-height: 20px;
-  margin-bottom: 10px;
+  width: 233px;
+  height: 136.22px;
+  margin-bottom: 8px;
 }
 #btn-News {
   border: none;
@@ -75,6 +69,8 @@ header {
   background: #fddc3f;
   border-radius: 10px;
 
+  margin-top: 0px;
+  margin-left: 10px;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 900;
@@ -84,17 +80,63 @@ header {
   letter-spacing: 0.1em;
 
   color: #3a2929;
+  margin: auto;
 }
 #btn-News > i {
   margin-top: 3px;
 }
-
-.cellphone {
-  padding-top: 35px;
-}
 .cellphone_img {
   width: 305px;
   height: 434.685px;
+}
+
+/* 화살표 */
+/* .arrow_down {
+  height: 20px;
+  background: #f9f9f9;
+} */
+/* 화살표 애니메이션 */
+.arrow {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -0px;
+  margin-left: -12px;
+  border-left: 3px solid #888888;
+  border-bottom: 3px solid #888888;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /* 중간설명 */
@@ -148,18 +190,16 @@ header {
 }
 
 #home-tab-pane {
-  padding-top: 50px;
-  background: #f1f7ff;
+  margin-top: 50px;
 }
 #profile-tab-pane {
-  padding-top: 50px;
-  background: #f1f7ff;
+  margin-top: 50px;
 }
 
 .tab-content {
   background-color: #ffffff;
 }
-.tab-content_s {
+.tab-content_b {
   padding-bottom: 25.18px;
   background: #f1f7ff;
 }
@@ -176,9 +216,9 @@ header {
   margin: 0 auto;
 }
 .tab_content_phrase {
-  padding-left: 27px;
-  padding-top: 15px;
-  padding-bottom: 55px;
+  padding-left: 24px;
+  padding-top: 18px;
+  /* padding-bottom: 55px; */
 
   font-size: 28px;
   font-weight: bold;
@@ -202,50 +242,23 @@ header {
   height: 114px;
   width: 306px;
 }
-.tab_content_g {
-  /* background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    rgba(251, 252, 254, 0.99) 9%,
-    rgba(240, 245, 253, 0.96) 16%,
-    rgba(222, 234, 251, 0.92) 24%,
-    rgba(197, 218, 248, 0.86) 31%,
-    rgba(164, 197, 245, 0.78) 39%,
-    rgba(124, 172, 241, 0.68) 46%,
-    rgba(76, 141, 235, 0.56) 53%,
-    rgba(22, 107, 230, 0.43) 60%,
-    rgba(12, 101, 229, 0.4) 61%,
-    rgba(21, 106, 229, 0.4) 70%,
-    rgba(49, 124, 232, 0.4) 77%,
-    rgba(95, 154, 237, 0.4) 85%,
-    rgba(161, 195, 244, 0.4) 92%,
-    rgba(245, 248, 253, 0.4) 99%,
-    rgba(255, 255, 255, 0.4) 100%
-  ); */
-  background: #f1f7ff;
-  padding-bottom: 25.18px;
+.tab_content_w {
+  background: #fff;
+  /* padding-bottom: 25.18px; */
   height: 605px;
 }
-/* .img1 {
-    position: absolute;
-    width: 180px;
-    height: 364.82px;
-    margin-left: 27px;
-  }
-  .img2 {
-    position: absolute;
-    width: 180px;
-    height: 364.82px;
-    margin-left: 152px;
-    margin-top: 39px;
-  } */
+.tab_content_b {
+  background: #f1f7ff;
+  /* padding-bottom: 25.18px; */
+  height: 605px;
+}
 .tab_content_img {
-  margin-top: 23.6533px;
-  width: 300px;
-  height: 415px;
-  padding-bottom: 25.18px;
+  width: 307px;
+  height: 403.63px;
   display: block;
   margin: auto;
+  margin-top: 34px;
+  margin-bottom: 35px;
 }
 .tab_content_img_arrow {
   margin-top: 23.6533px;
@@ -255,13 +268,13 @@ header {
   display: block;
   margin: auto;
 }
-.tab_content_img-one {
-  margin-top: 23.6533px;
-  width: 200px;
-  height: 415px;
-  padding-bottom: 25.18px;
+.tab_content_img_one {
+  width: 220px;
+  height: 445.66px;
   display: block;
   margin: auto;
+  margin-top: 14px;
+  margin-bottom: 13.34px;
 }
 .tab-header {
   position: sticky;
@@ -269,21 +282,7 @@ header {
 
 /* 좋은 주요 서비스 어필 */
 .benefit {
-  /* background: linear-gradient(
-    /* 180deg,
-    #ffffff 0%,
-    rgba(252, 253, 254, 0.99) 18%,
-    rgba(242, 247, 253, 0.97) 31%,
-    rgba(226, 237, 251, 0.93) 43%,
-    rgba(204, 223, 249, 0.88) 54%,
-    rgba(175, 204, 246, 0.8) 64%,
-    rgba(140, 182, 242, 0.72) 74%,
-    rgba(98, 155, 238, 0.61) 84%,
-    rgba(51, 125, 233, 0.5) 93%,
-    rgba(12, 101, 229, 0.4) 100%
-  ); */
-
-  /* padding-bottom: 25.18px; */
+  background: #f1f7ff;
 }
 .benefit_phrase {
   padding-left: 27px;
@@ -336,7 +335,7 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  line-height: 35px;
+  /* line-height: 35px; */
   text-align: center;
 
   color: #000000;
@@ -348,7 +347,7 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
+  /* line-height: 20px; */
   text-align: center;
 
   color: #000000;
@@ -360,13 +359,17 @@ header {
 /* 전화번호 받는 부분 */
 .phone_number {
   background-color: #000000;
-}
-.tell {
   max-width: 639x;
   height: 429px;
   margin: 0 auto;
   position: relative;
 }
+/* .tell {
+  max-width: 639x;
+  height: 429px;
+  margin: 0 auto;
+  position: relative;
+} */
 .tell_txt {
   font-size: 22px;
   font-weight: bold;
@@ -430,7 +433,7 @@ header {
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
-  line-height: 20px;
+  /* line-height: 20px; */
 
   text-align: center;
   letter-spacing: 0.1em;
@@ -451,7 +454,7 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 20px;
+  /* line-height: 20px; */
   text-align: center;
 
   color: #ffffff;
@@ -473,13 +476,16 @@ footer {
   font-size: 12px;
   background-color: #1a1f27;
   margin: auto;
-}
-.footer {
-  max-width: 639px;
-  margin: 0 auto;
+  /* max-width: 639px; */
   height: 177px;
   /* height: 500px; */
 }
+/* .footer {
+  max-width: 639px;
+  margin: 0 auto;
+  height: 177px;
+  height: 500px;
+} */
 .copy_area {
   display: flex;
   margin-top: 10px;
@@ -569,7 +575,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  line-height: 22px;
+  /* line-height: 22px; */
   /* identical to box height */
 
   text-align: center;
@@ -585,7 +591,7 @@ footer {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 35px;
+  /* line-height: 35px; */
 
   color: #363636;
 
@@ -599,7 +605,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 23px;
+  /* line-height: 23px; */
 
   color: #000000;
 
@@ -613,7 +619,7 @@ footer {
   border-radius: 30px;
   font-size: 13px;
   margin-top: 25px;
-  line-height: 25px;
+  /* line-height: 25px; */
 }
 #btn-pop-up {
   /* display: flex; */
@@ -622,8 +628,6 @@ footer {
 
   width: 360px;
   height: 49px;
-
-  /* padding: 9px 0px 0px 40px; */
 
   border: none;
   background: #0c65e5;
@@ -647,7 +651,7 @@ footer {
   margin: auto;
   /* margin-left: 10px; */
   /* margin-top: -3px; */
-  line-height: 20px;
+  /* line-height: 20px; */
 
   text-align: center;
   letter-spacing: 0.1em;
@@ -656,7 +660,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
-  line-height: 32px;
+  /* line-height: 32px; */
 
   color: #ffffff;
 }
@@ -691,7 +695,7 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
-  line-height: 22px;
+  /* line-height: 22px; */
   /* identical to box height, or 88% */
 
   text-align: center;

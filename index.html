@@ -2,24 +2,21 @@
 <html lang="ko">
 
 <head>
-  <meta name="naver-site-verification" content="5a993e3562810c92c944ee995930c80aa2733993" />
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
-
-  <!-- 구글 seo -->
+  <meta name="naver-site-verification" content="5a993e3562810c92c944ee995930c80aa2733993" />
   <meta name="google-site-verification" content="1scbelLzB1qW2giFEXl1SK4ptVF5pNW1rhF5NrBpQ9o" />
-  <meta name="description" content="세차의 모든 것 세차새차, 세차 예약은 세차새차에서 빠르게">
-  <meta property="image" content="/img/Logo.png">
 
-  <!--네이버 seo-->
-  <title>세차새차</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no" />
+
   <meta property="og:type" content="website">
+  <title>세차새차</title>
   <meta property="og:title" content="세차새차">
-  <meta property="og:description" content="세차의 모든 것 세차새차, 세차 예약은 세차새차에서 빠르게">
-  <meta property="og:image" content="/img/Logo.png">
+  <meta property="og:site_name" content="세차새차">
+  <meta property="og:description" content="오늘 바로 근처 세차장에서 예약하세요">
+  <meta name="description" content="오늘 바로 근처 세차장에서 예약하세요">
+  <meta property="og:image" content="./img/Logo.png">
   <meta property="og:url" content="https://www.washcar.me">
-  <meta name="description" content="세차의 모든 것 세차새차, 세차 예약은 세차새차에서 빠르게">
   <meta name="robots" content="index,follow">
 
   <link rel="icon" href="/img/Logo.png" />
@@ -42,7 +39,7 @@
     <div class="header">
       <div>
         <a href="" class="banlife">
-          <img class="header-img" src="/img/navbarPhrase.webp" alt="세차새차" />
+          <img class="header-img" src="./img/navbar_phrase.webp" alt="세차새차" />
         </a>
       </div>
       <!-- <div class="link" id="gnb">
@@ -50,29 +47,33 @@
         </div> -->
     </div>
   </header>
-  <div id="home">
+
+  <section id="home">
     <!-- 첫페이지 -->
     <section class="main_visual">
-      <div class="cont_wrap">
-        <div class="txt_wrap">
-          <img class="phrase" src="/img/firstPhrase.webp" alt="세차장 예약 세차새차에서 쉽고 빠르게">
-          <!-- <a href="#receivingNews" id="btn-News" class="btn btn-primary"> -->
-          <!-- 출시 소식 받아보기 -->
-          <!-- </a> -->
+      <img class="phrase" src="./img/first_phrase.webp" alt="세차장 예약 세차새차에서 쉽고 빠르게">
+      <!-- <a href="#receivingNews" id="btn-News" class="btn btn-primary"> -->
+      <!-- 출시 소식 받아보기 -->
+      <!-- </a> -->
 
-          <button id="btn-News" type="button">
-            <i class="fa-solid fa-comment"> </i>
-            <div class="tel_btnTxt">가입하고 쿠폰받기</div>
-          </button>
+      <button id="btn-News" type="button">
+        <i class="fa-solid fa-comment"> </i>
+        <div class="tel_btnTxt">가입하고 쿠폰받기</div>
+      </button>
 
-          <div class="cellphone">
-            <img class="cellphone_img" src="/img/firstContent.webp" alt="세차새차 모바일 앱 첫 화면">
-          </div>
-        </div>
+      <div class="cellphone">
+        <img class="cellphone_img" src="./img/first_content.webp" alt="세차새차 모바일 앱 첫 화면">
       </div>
     </section>
+
+    <!-- 화살표 -->
+    <!-- <section class="arrow_down">
+
+    </section> -->
+
     <!-- 중간설명 -->
     <section class="comment" id="comment">
+      <a href="#comment" class="arrow_btn"><span class="arrow"></span></a>
       <div class="comment_txt">
         내 주변 모든 세차장
         <br />비교 한 곳에서 하세요
@@ -81,87 +82,90 @@
         <br />당신의 세차가 즐거워질 거예요
       </div>
     </section>
+
+
+
     <!-- 주요 서비스 설명 -->
-    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
-          role="tab" aria-controls="home-tab-pane" aria-selected="true">
-          손님이신가요?
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
-          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-          사장님이신가요?
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <!-- 손님 -->
-      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        <div class="tab_content_g">
-          <div class="tab_content_phrase">
-            세차장 검색은 <br />세차새차에서
+    <section>
+      <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            손님이신가요?
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            사장님이신가요?
+          </button>
+        </li>
+      </ul>
+
+
+      <div class="tab-content" id="myTabContent">
+        <!-- 손님 -->
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <div class="tab_content_w">
+            <div class="tab_content_phrase">
+              내 주변 <br />세차장은 <br /> 세차세차에서
+            </div>
+            <img class="tab_content_img" src="./img/guest_content1.webp" alt="손님측 세차장 검색하는 화면">
           </div>
-          <img class="tab_content_img" src="/img/guest_content1-Img.webp" alt="손님측 세차장 검색하는 화면">
+          <div class="tab_content_b">
+            <div class="tab_content_phrase">
+              일정에 맞게<br />
+              원하는 세차장을<br />
+              예약하세요
+            </div>
+            <img class="tab_content_img" src="./img/guest_content2.webp" alt="손님측 세차새차 예약하는 화면">
+          </div>
+          <div class="tab_content_w">
+            <div class="tab_content_phrase">
+              세차 일정 관리 <br />
+              세차새차에서 한번에 <br />
+              간편하게
+
+            </div>
+            <img class="tab_content_img_one" src="./img/guest_content3.webp" alt="손님측 예약한 일정들을 관리하는 화면">
+          </div>
+          <div class="tab_content_b">
+            <div class="tab_content_phrase">
+              실시간으로 <br />업데이트 되는 <br /> 세차 현황을 받아보세요
+            </div>
+            <img class="tab_content_img" src="./img/guest_content4.webp" alt="손님측 세차 현황들을 볼 수 있는 화면">
+          </div>
         </div>
-        <div class="tab_content_s">
-          <div class="tab_content_phrase">
-            시간과 차종을 알려주세요 <br /> 최고 세차 품질과 서비스로 <br /> 보답합니다
+        <!-- 사장 -->
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="tab_content_w">
+            <div class="tab_content_phrase">
+              세차새차에서<br /> 더 많은 손님과 <br />만나세요
+            </div>
+            <img class="tab_content_img_one" src="./img/owner_content2.webp" alt="사장님측 예약현활들을 볼 수 있는 화면">
           </div>
-          <img class="tab_content_img" src="/img/guest_content2-Img.webp" alt="손님측 세차새차 예약하는 화면">
-        </div>
-        <div class="tab_content_g">
-          <div class="tab_content_phrase">
-            세차 일정 관리 <br /> 세차새차에서 한 번에
+          <div class="tab_content_b">
+            <div class="tab_content_phrase">
+              가입과 동시에 <br /> 우리 세차장만의<br /> 홈페이지가 무료로
+            </div>
+            <img class="tab_content_img" src="./img/owner_content3.webp" alt="사장님측 개인 세차장만의 홈페이지가 만들어지는 화면">
           </div>
-          <img class="tab_content_img-one" src="/img/guest_content3-Img.webp" alt="손님측 예약한 일정들을 관리하는 화면">
-        </div>
-        <div class="tab_conten_s">
-          <div class="tab_content_phrase">
-            실시간으로 업데이트 되는 <br /> 세차 현황을 받아보세요
+          <div class="tab_content_w">
+            <div class="tab_content_phrase">
+              복잡한 스케줄 고민은 그만 <br /> 세차새차에서 간편하게<br />관리하세요.
+            </div>
+            <img class="tab_content_img" src="./img/owner_content4.webp" alt="사장님측 세차새차로 세차장 스케줄 관리하는 화면">
           </div>
-          <img class="tab_content_img" src="/img/guest_content4-Img.webp" alt="손님측 세차 현황들을 볼 수 있는 화면">
-        </div>
-      </div>
-      <!-- 사장 -->
-      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <div class="tab_content_s">
-          <div class="tab_content">
-            매출은 높게
-            <br />비용은 <span class="little">낮게</span>
-            <br />부담은 <span class="low">적게</span>
-          </div>
-          <!-- <img class="tab_content_img_arrow" src="/img/arrow.webp" alt=""> -->
-        </div>
-        <div class="tab_content_g">
-          <div class="tab_content_phrase">
-            세차새차에서<br /> 더 많은 손님과 만나세요
-          </div>
-          <img class="tab_content_img-one" src="/img/owner_content2-img.webp" alt="사장님측 예약현활들을 볼 수 있는 화면">
-        </div>
-        <div class="tab_content_s">
-          <div class="tab_content_phrase">
-            가입과 동시에 <br /> 우리 세차장만의<br /> 홈페이지가 무료로
-          </div>
-          <img class="tab_content_img" src="/img/owner_content3-img.webp" alt="사장님측 개인 세차장만의 홈페이지가 만들어지는 화면">
-        </div>
-        <div class="tab_content_g">
-          <div class="tab_content_phrase">
-            복잡한 스케줄 고민은 그만 <br /> 세차새차에서 간편하게
-          </div>
-          <img class="tab_content_img" src="/img/owner_content4-img.webp" alt="사장님측 세차새차로 세차장 스케줄 관리하는 화면">
-        </div>
-        <!-- 좋은 주요서비스 어필 -->
-        <div class="benefit">
-          <div class="benefit_phrase">
-            똑똑하게 <br /> 손님과 소통하세요 <br /> 알림톡이 전송됩니다
-          </div>
-          <div class="like">
-            <div class="like_acc_tile">
-              <div class="thumbnail_wrapper">
+          <!-- 좋은 주요서비스 어필 -->
+          <div class="benefit">
+            <div class="benefit_phrase">
+              똑똑하게 <br /> 손님과 소통하세요 <br /> 알림톡이 전송됩니다.
+            </div>
+            <div class="like">
+              <div class="like_acc_tile">
                 <div class="thumbnail">
-                  <img class="like_icon1" src="/img/Icon1.webp" alt="세차예약">
+                  <img class="like_icon1" src="./img/owner_content4_1.webp" alt="세차예약">
                 </div>
                 <div class="like_title">
                   세차 예약
@@ -171,11 +175,9 @@
                   <br />번거롭게 손님과 통화 할 필요 없어요.
                 </div>
               </div>
-            </div>
-            <div class="like_acc_tile">
-              <div class="thumbnail_wrapper">
+              <div class="like_acc_tile">
                 <div class="thumbnail">
-                  <img class="like_icon2" src="/img/Icon2.webp" alt="세차 완료 1시간 전 알림">
+                  <img class="like_icon2" src="./img/owner_content4_2.webp" alt="세차 완료 1시간 전 알림">
                 </div>
                 <div class="like_title">
                   세차 1시간 전에
@@ -185,11 +187,9 @@
                   <br />자동으로 알람이 울려요.
                 </div>
               </div>
-            </div>
-            <div class="like_acc_tile">
-              <div class="thumbnail_wrapper">
+              <div class="like_acc_tile">
                 <div class="thumbnail">
-                  <img class="like_icon3" src="/img/Icon3.webp" alt="세차 완료 알림">
+                  <img class="like_icon3" src="./img/owner_content4_3.webp" alt="세차 완료 알림">
                 </div>
                 <div class="like_title">
                   세차 완료
@@ -203,51 +203,48 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
   <!-- 전화번호 받는 부분 -->
   <section id="receivingNews" class="phone_number">
-    <div class="tell">
-      <div class="cont_tell">
-        <div class="tell_txt">이 서비스 궁금하신가요?</div>
-        <div class="tell_txt2">
-          서비스 출시가 되면 소식을 받아볼 수 있습니다
-        </div>
-        <div class="tell_box">
-          <button id="tel_btn" type="submit">
-            <i class="fa-solid fa-comment"></i>
-            <div class="tel_btnTxt">가입하고 쿠폰받기</div>
-          </button>
-          <!-- <form id="myFormGuest">
+    <!-- <div class="tell"> -->
+    <div class="tell_txt">이 서비스 궁금하신가요?</div>
+    <div class="tell_txt2">
+      서비스 출시가 되면 소식을 받아볼 수 있습니다
+    </div>
+    <div class="tell_box">
+      <button id="tel_btn" type="submit">
+        <i class="fa-solid fa-comment"></i>
+        <div class="tel_btnTxt">가입하고 쿠폰받기</div>
+      </button>
+      <!-- <form id="myFormGuest">
             <input class="tel_input" type="tel" id="myInput" name="myInput" placeholder="전화번호를 입력해주세요">
             <button id="tel_btn2" type="submit">제출하기</button>
           </form> -->
-          <img class="last_Img" src="/img/lastImg.webp" alt="세차새차 모바일 웹 첫 화면">
-        </div>
-      </div>
+      <img class="last_Img" src="./img/last_content.webp" alt="세차새차 모바일 웹 첫 화면">
     </div>
+    <!-- </div> -->
   </section>
-  </div>
   <footer>
-    <div class="footer">
-      <div class="copy_area">
-        <span>
-          <img class="logo" src="/img/Logo.png" alt="세차새차 로고">
-        </span>
-        <span>
-          <img class="logo2" src="img/footerPhrase.webp" alt="세차새차 글씨로고">
-        </span>
-      </div>
-      <div id="footer_url">
-        <a class="footer_url" href="www.washcar.me">www.washcar.me</a>
-      </div>
-      <div class="footer_content">
-        <div>대표 <span class="content_small">심덕수</span></div>
-        <div>주소 <span class="content_small">인천 연수구 갯벌로 12 4층</span></div>
-        <div>전화 <span class="content_small">010-2144-9524</span></div>
-        <div>메일 <span class="content_small">shim.creator@gmail.com</span></div>
-      </div>
+    <!-- <div class="footer"> -->
+    <div class="copy_area">
+      <span>
+        <img class="logo" src="./img/Logo.png" alt="세차새차 로고">
+      </span>
+      <span>
+        <img class="logo2" src="./img/footer_phrase.webp" alt="세차새차 글씨로고">
+      </span>
     </div>
+    <div id="footer_url">
+      <a class="footer_url" href="www.washcar.me">www.washcar.me</a>
+    </div>
+    <div class="footer_content">
+      <div>대표 <span class="content_small">심덕수</span></div>
+      <div>주소 <span class="content_small">인천 연수구 갯벌로 12 4층</span></div>
+      <div>전화 <span class="content_small">010-2144-9524</span></div>
+      <div>메일 <span class="content_small">shim.creator@gmail.com</span></div>
+    </div>
+    <!-- </div> -->
   </footer>
   <div>
     <!-- 다운하는 버튼 -->
@@ -260,7 +257,7 @@
         <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
       </div>
       <div>
-        <img class="img-pop-up_logo" src="/img/Logo.png" alt="세차새차 로고">
+        <img class="img-pop-up_logo" src="./img/Logo.png" alt="세차새차 로고">
       </div>
       <div class="pop-up_txt1">
         카카오 가입만 하면
