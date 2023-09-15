@@ -22,16 +22,49 @@ document.addEventListener('scroll', () => {
   }
 });
 
+const arrowUpBtn = document.querySelector('#arrow_up_btn');
+const btnNews = document.querySelector('#btn-News');
+const btnPopUp = document.querySelector('#btn-pop-up');
+const telBtn = document.querySelector('#tel_btn');
+btnNews.onclick = function () {
+  alert('개발중입니다.');
+};
+btnPopUp.onclick = function () {
+  alert('개발중입니다.');
+};
+telBtn.onclick = function () {
+  alert('개발중입니다.');
+};
+
+let currentTab = null;
+
 //손님님이신가요? 클릭 시 pop-up, arrow-up 존재
 const btnGuest = document.querySelector('#home-tab');
 btnGuest.addEventListener('click', () => {
   scrollToIdDownHeaderAndTab('#home-tab-pane');
+  popUp.classList.remove('close');
+  arrowUp.style.display = 'block'; // 버튼 보이게 하기
+  arrowUpBtn.textContent = '쿠폰 받기';
+  currentTab = 'guest';
 });
 
 //사장님이신가요? 클릭 시 pop-up, arrow-up 존재
 const btnOwner = document.querySelector('#profile-tab');
 btnOwner.addEventListener('click', () => {
   scrollToIdDownHeaderAndTab('#profile-tab-pane');
+  popUp.classList.add('close');
+  arrowUpBtn.style.display = 'block'; // 버튼 보이게 하기
+  arrowUpBtn.textContent = '세차장 입점하기';
+  currentTab = 'owner';
+});
+
+// Arrow button event delegation
+arrowUp.addEventListener('click', function (e) {
+  if (currentTab === 'guest') {
+    alert('개발중입니다.');
+  } else if (currentTab === 'owner') {
+    window.location.href = 'https://tally.so/r/w2a1Qe/';
+  }
 });
 
 const popUp = document.querySelector('#pop-up');
@@ -44,8 +77,6 @@ const content = document.querySelector('.tab-content');
 const contentHeight = content.offsetHeight;
 
 document.addEventListener('scroll', () => {
-  console.log(window.scrollY);
-  // console.log(homeHeight);
   // 손님이신가요? 를 선택했을 때
   if (btnGuest.classList.contains('active')) {
     // 표시되는 조건
@@ -79,14 +110,14 @@ document.addEventListener('scroll', () => {
   else if (btnOwner.classList.contains('active')) {
     if (
       window.scrollY > homeHeight / 2 &&
-      window.scrollY < homeHeight / 2 + 3750
+      window.scrollY < homeHeight / 2 + 3150
     ) {
       if (!arrowUp.classList.contains('visible')) {
         arrowUp.classList.add('visible');
       }
       if (window.scrollY > contentHeight / 2 + 700) {
-        if (!popUp.classList.contains('visible')) {
-          popUp.classList.add('visible');
+        if (!popUp.classList.contains('close')) {
+          popUp.classList.add('close');
         }
       }
     } else {
@@ -104,15 +135,12 @@ document.addEventListener('scroll', () => {
 const btnClose = document.querySelector('#btn-close');
 btnClose.addEventListener('click', () => {
   popUp.classList.add('close');
-  // arrowUp.classList.remove('visible');
-  // arrowUp.classList.add('visible2');
   if (
     window.scrollY > homeHeight / 2 + 100 && //1800
     window.scrollY < homeHeight / 2 + 2290 //
   ) {
     arrowUp.classList.add('visible');
   } else if (window.scrollY > tellHeight) {
-    // 2700
     arrowUp.classList.remove('visible');
   } else if (window.scrollY < tellHeight / 2) {
     arrowUp.classList.remove('visible');
@@ -135,42 +163,6 @@ function scrollToIdDownHeaderAndTab(selector) {
   const offset = scrollTo.offsetTop - header.offsetHeight - tab.offsetHeight;
   window.scrollTo({ top: offset, behavior: 'smooth' });
 }
-
-//안쓰는거
-// 맨 위에 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-const receivingNews = document.querySelector('#btn-News');
-receivingNews.addEventListener('click', () => {
-  scrollToIdDownHeaderAndTab('#receivingNews');
-});
-
-const tell = document.querySelector('#receivingNews');
-const tellHeight = tell.offsetHeight;
-
-// arrow up 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-arrowUp.addEventListener('click', () => {
-  scrollToIdDownHeaderAndTab('#receivingNews');
-});
-
-// Btn_PopUp 버튼 클릭했을 때 전화번호 입력 부분으로 내려가기
-const Btn_PopUp = document.querySelector('#btn-pop-up');
-Btn_PopUp.addEventListener('click', () => {
-  scrollToIdDownHeaderAndTab('#receivingNews');
-  popUp.classList.add('close');
-});
-// Btn_PopUp.addEventListener('click', () => {
-//   scrollToIdDownHeaderAndTab('#receivingNews');
-//   popUp.classList.add('close');
-//   if (
-//     window.scrollY > homeHeight / 2 + 100 &&
-//     window.scrollY < homeHeight / 2 + 2290
-//   ) {
-//     arrowUp.classList.add('visible');
-//   } else if (window.scrollY > tellHeight) {
-//     arrowUp.classList.remove('visible');
-//   } else if (window.scrollY < tellHeight / 2) {
-//     arrowUp.classList.remove('visible');
-//   }
-// });
 
 //전화번호 데이터 파이어베이스에 저장하는 코드
 const formGuest = document.getElementById('myFormGuest');
