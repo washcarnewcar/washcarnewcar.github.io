@@ -60,7 +60,9 @@ btnOwner.addEventListener('click', () => {
 
 // Arrow button event delegation
 arrowUp.addEventListener('click', function (e) {
-  if (currentTab === 'guest') {
+  if (currentTab === null) {
+    alert('개발중입니다.');
+  } else if (currentTab === 'guest') {
     alert('개발중입니다.');
   } else if (currentTab === 'owner') {
     window.location.href = 'https://tally.so/r/w2a1Qe/';
